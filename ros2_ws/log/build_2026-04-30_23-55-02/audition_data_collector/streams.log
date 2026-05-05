@@ -1,0 +1,65 @@
+[0.009s] Invoking command in '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector': AMENT_PREFIX_PATH=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector -- -j20 -l20
+[0.048s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.165s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.190s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.191s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.196s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.203s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.212s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.263s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.266s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.370s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.423s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.451s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.469s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.491s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.507s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[0.534s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[0.539s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.592s] -- Found audition_msgs: 0.0.1 (/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs/share/audition_msgs/cmake)
+[0.652s] Error parsing '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_data_collector/package.xml':
+[0.652s] Traceback (most recent call last):
+[0.652s]   File "/home/moses/miniforge3/lib/python3.12/site-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[0.654s]     root = dom.parseString(data)
+[0.654s]            ^^^^^^^^^^^^^^^^^^^^^
+[0.654s]   File "/home/moses/miniforge3/lib/python3.12/xml/dom/minidom.py", line 2000, in parseString
+[0.654s]     return expatbuilder.parseString(string)
+[0.654s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.655s]   File "/home/moses/miniforge3/lib/python3.12/xml/dom/expatbuilder.py", line 922, in parseString
+[0.655s]     return builder.parseString(string)
+[0.655s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.655s]   File "/home/moses/miniforge3/lib/python3.12/xml/dom/expatbuilder.py", line 220, in parseString
+[0.655s]     parser.Parse(string, True)
+[0.655s] xml.parsers.expat.ExpatError: XML or text declaration not at start of entity: line 2, column 0
+[0.655s] 
+[0.655s] During handling of the above exception, another exception occurred:
+[0.655s] 
+[0.655s] Traceback (most recent call last):
+[0.655s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.655s]     main()
+[0.655s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.655s]     raise e
+[0.655s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.655s]     package = parse_package_string(
+[0.655s]               ^^^^^^^^^^^^^^^^^^^^^
+[0.655s]   File "/home/moses/miniforge3/lib/python3.12/site-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[0.655s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[0.655s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_data_collector/package.xml':
+[0.655s] The manifest contains invalid XML:
+[0.655s] XML or text declaration not at start of entity: line 2, column 0
+[0.663s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.663s]   execute_process(/home/moses/miniforge3/bin/python3
+[0.663s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.663s]   /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_data_collector/package.xml
+[0.663s]   /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/ament_cmake_core/package.cmake)
+[0.663s]   returned error code 1
+[0.663s] Call Stack (most recent call first):
+[0.663s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.663s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[0.663s]   CMakeLists.txt:106 (ament_package)
+[0.663s] 
+[0.663s] [0m
+[0.663s] -- Configuring incomplete, errors occurred!
+[0.663s] See also "/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/CMakeOutput.log".
+[0.670s] gmake: *** [Makefile:308: cmake_check_build_system] Error 1
+[0.671s] Invoked command in '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector' returned '2': AMENT_PREFIX_PATH=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector -- -j20 -l20

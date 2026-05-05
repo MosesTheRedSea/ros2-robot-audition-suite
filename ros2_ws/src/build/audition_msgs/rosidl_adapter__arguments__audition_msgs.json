@@ -1,0 +1,9 @@
+{
+  "package_name": "audition_msgs",
+  "non_idl_tuples": [
+    "/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_msgs:msg/CollectionStatus.msg",
+    "/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_msgs:srv/ProceedToNext.srv",
+    "/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_msgs:srv/AbortSession.srv",
+    "/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_msgs:action/CollectAtWaypoint.action"
+  ]
+}

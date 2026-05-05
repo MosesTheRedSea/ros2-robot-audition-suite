@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>audition_bringup</name>
+  <version>0.0.1</version>
+  <description>Launch files for audition data collector</description>
+  <maintainer email="you@email.com">you</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>audition_data_collector</exec_depend>
+  <exec_depend>audition_msgs</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>slam_toolbox</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

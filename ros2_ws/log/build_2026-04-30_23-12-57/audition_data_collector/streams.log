@@ -1,0 +1,48 @@
+[0.007s] Invoking command in '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector -- -j20 -l20
+[0.031s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.141s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.159s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.160s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.164s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.169s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.175s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.193s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.193s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.269s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.300s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.391s] -- Configuring done
+[0.398s] -- Generating done
+[0.401s] -- Build files have been written to: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector
+[0.425s] [35m[1mConsolidate compiler generated dependencies of target marker_navigator_node[0m
+[0.426s] [35m[1mConsolidate compiler generated dependencies of target recorder_node[0m
+[0.439s] [ 50%] Built target recorder_node
+[0.441s] [ 75%] [32mBuilding CXX object CMakeFiles/marker_navigator_node.dir/src/marker_navigator_node.cpp.o[0m
+[2.031s] [100%] [32m[1mLinking CXX executable marker_navigator_node[0m
+[2.138s] [100%] Built target marker_navigator_node
+[2.150s] Invoked command in '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector -- -j20 -l20
+[2.161s] Invoking command in '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector
+[2.168s] -- Install configuration: ""
+[2.168s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/marker_navigator_node
+[2.168s] -- Set runtime path of "/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/marker_navigator_node" to ""
+[2.168s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/recorder_node
+[2.169s] -- Set runtime path of "/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/recorder_node" to ""
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/launch
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/launch/collect.launch.py
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/config
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/config/params.yaml
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/ament_index/resource_index/package_run_dependencies/audition_data_collector
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/ament_index/resource_index/parent_prefix_path/audition_data_collector
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/environment/ament_prefix_path.sh
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/environment/ament_prefix_path.dsv
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/environment/path.sh
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/environment/path.dsv
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/local_setup.bash
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/local_setup.sh
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/local_setup.zsh
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/local_setup.dsv
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/package.dsv
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/ament_index/resource_index/packages/audition_data_collector
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/cmake/audition_data_collectorConfig.cmake
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/cmake/audition_data_collectorConfig-version.cmake
+[2.169s] -- Installing: /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/package.xml
+[2.172s] Invoked command in '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector

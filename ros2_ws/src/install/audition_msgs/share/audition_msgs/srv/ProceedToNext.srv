@@ -1,0 +1,5 @@
+bool proceed
+string operator_note
+---
+bool accepted
+string next_waypoint_label
