@@ -1,7 +1,10 @@
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/uninstall.dir
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/audition_data_collector_uninstall.dir
-/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/marker_navigator_node.dir
+/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/waypoint_manager_node.dir
+/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/collection_node.dir
+/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/intervention_server_node.dir
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/recorder_node.dir
+/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/marker_navigator_node.dir
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/test.dir
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/edit_cache.dir
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles/rebuild_cache.dir

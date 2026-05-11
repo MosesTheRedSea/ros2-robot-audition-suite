@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "audition_msgs")
 set(audition_msgs_VERSION "0.0.1")
-set(audition_msgs_MAINTAINER "you <you@email.com>")
+set(audition_msgs_MAINTAINER "you <MosesOluwatobiAdewolu@gmail.com>")
 set(audition_msgs_BUILD_DEPENDS "std_msgs" "action_msgs")
 set(audition_msgs_BUILDTOOL_DEPENDS "ament_cmake" "rosidl_default_generators")
 set(audition_msgs_BUILD_EXPORT_DEPENDS "std_msgs" "action_msgs")

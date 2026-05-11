@@ -124,7 +124,7 @@ rosidl_generator_c/audition_msgs/msg/collection_status.h: /opt/ros/humble/share/
 rosidl_generator_c/audition_msgs/msg/collection_status.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 rosidl_generator_c/audition_msgs/msg/collection_status.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/home/moses/miniforge3/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_msgs/rosidl_generator_c__arguments.json
+	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/audition_msgs/msg/detail/collection_status__functions.h: rosidl_generator_c/audition_msgs/msg/collection_status.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/audition_msgs/msg/detail/collection_status__functions.h

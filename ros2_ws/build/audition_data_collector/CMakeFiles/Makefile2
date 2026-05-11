@@ -63,8 +63,11 @@ CMAKE_BINARY_DIR = /home/moses/Moses/Robotics/ROS-Projects/audition-data-collect
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/marker_navigator_node.dir/all
+all: CMakeFiles/waypoint_manager_node.dir/all
+all: CMakeFiles/collection_node.dir/all
+all: CMakeFiles/intervention_server_node.dir/all
 all: CMakeFiles/recorder_node.dir/all
+all: CMakeFiles/marker_navigator_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,8 +77,11 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/audition_data_collector_uninstall.dir/clean
-clean: CMakeFiles/marker_navigator_node.dir/clean
+clean: CMakeFiles/waypoint_manager_node.dir/clean
+clean: CMakeFiles/collection_node.dir/clean
+clean: CMakeFiles/intervention_server_node.dir/clean
 clean: CMakeFiles/recorder_node.dir/clean
+clean: CMakeFiles/marker_navigator_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -131,30 +137,82 @@ CMakeFiles/audition_data_collector_uninstall.dir/clean:
 .PHONY : CMakeFiles/audition_data_collector_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/marker_navigator_node.dir
+# Target rules for target CMakeFiles/waypoint_manager_node.dir
 
 # All Build rule for target.
-CMakeFiles/marker_navigator_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/marker_navigator_node.dir/build.make CMakeFiles/marker_navigator_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/marker_navigator_node.dir/build.make CMakeFiles/marker_navigator_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles --progress-num=1,2 "Built target marker_navigator_node"
-.PHONY : CMakeFiles/marker_navigator_node.dir/all
+CMakeFiles/waypoint_manager_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager_node.dir/build.make CMakeFiles/waypoint_manager_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager_node.dir/build.make CMakeFiles/waypoint_manager_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles --progress-num=9,10 "Built target waypoint_manager_node"
+.PHONY : CMakeFiles/waypoint_manager_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/marker_navigator_node.dir/rule: cmake_check_build_system
+CMakeFiles/waypoint_manager_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/marker_navigator_node.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/waypoint_manager_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles 0
-.PHONY : CMakeFiles/marker_navigator_node.dir/rule
+.PHONY : CMakeFiles/waypoint_manager_node.dir/rule
 
 # Convenience name for target.
-marker_navigator_node: CMakeFiles/marker_navigator_node.dir/rule
-.PHONY : marker_navigator_node
+waypoint_manager_node: CMakeFiles/waypoint_manager_node.dir/rule
+.PHONY : waypoint_manager_node
 
 # clean rule for target.
-CMakeFiles/marker_navigator_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/marker_navigator_node.dir/build.make CMakeFiles/marker_navigator_node.dir/clean
-.PHONY : CMakeFiles/marker_navigator_node.dir/clean
+CMakeFiles/waypoint_manager_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager_node.dir/build.make CMakeFiles/waypoint_manager_node.dir/clean
+.PHONY : CMakeFiles/waypoint_manager_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/collection_node.dir
+
+# All Build rule for target.
+CMakeFiles/collection_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collection_node.dir/build.make CMakeFiles/collection_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collection_node.dir/build.make CMakeFiles/collection_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles --progress-num=1,2 "Built target collection_node"
+.PHONY : CMakeFiles/collection_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/collection_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/collection_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles 0
+.PHONY : CMakeFiles/collection_node.dir/rule
+
+# Convenience name for target.
+collection_node: CMakeFiles/collection_node.dir/rule
+.PHONY : collection_node
+
+# clean rule for target.
+CMakeFiles/collection_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collection_node.dir/build.make CMakeFiles/collection_node.dir/clean
+.PHONY : CMakeFiles/collection_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/intervention_server_node.dir
+
+# All Build rule for target.
+CMakeFiles/intervention_server_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intervention_server_node.dir/build.make CMakeFiles/intervention_server_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intervention_server_node.dir/build.make CMakeFiles/intervention_server_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles --progress-num=3,4 "Built target intervention_server_node"
+.PHONY : CMakeFiles/intervention_server_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/intervention_server_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/intervention_server_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles 0
+.PHONY : CMakeFiles/intervention_server_node.dir/rule
+
+# Convenience name for target.
+intervention_server_node: CMakeFiles/intervention_server_node.dir/rule
+.PHONY : intervention_server_node
+
+# clean rule for target.
+CMakeFiles/intervention_server_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intervention_server_node.dir/build.make CMakeFiles/intervention_server_node.dir/clean
+.PHONY : CMakeFiles/intervention_server_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/recorder_node.dir
@@ -163,7 +221,7 @@ CMakeFiles/marker_navigator_node.dir/clean:
 CMakeFiles/recorder_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recorder_node.dir/build.make CMakeFiles/recorder_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recorder_node.dir/build.make CMakeFiles/recorder_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles --progress-num=3,4 "Built target recorder_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles --progress-num=7,8 "Built target recorder_node"
 .PHONY : CMakeFiles/recorder_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,6 +239,32 @@ recorder_node: CMakeFiles/recorder_node.dir/rule
 CMakeFiles/recorder_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recorder_node.dir/build.make CMakeFiles/recorder_node.dir/clean
 .PHONY : CMakeFiles/recorder_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/marker_navigator_node.dir
+
+# All Build rule for target.
+CMakeFiles/marker_navigator_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marker_navigator_node.dir/build.make CMakeFiles/marker_navigator_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marker_navigator_node.dir/build.make CMakeFiles/marker_navigator_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles --progress-num=5,6 "Built target marker_navigator_node"
+.PHONY : CMakeFiles/marker_navigator_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/marker_navigator_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/marker_navigator_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector/CMakeFiles 0
+.PHONY : CMakeFiles/marker_navigator_node.dir/rule
+
+# Convenience name for target.
+marker_navigator_node: CMakeFiles/marker_navigator_node.dir/rule
+.PHONY : marker_navigator_node
+
+# clean rule for target.
+CMakeFiles/marker_navigator_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marker_navigator_node.dir/build.make CMakeFiles/marker_navigator_node.dir/clean
+.PHONY : CMakeFiles/marker_navigator_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

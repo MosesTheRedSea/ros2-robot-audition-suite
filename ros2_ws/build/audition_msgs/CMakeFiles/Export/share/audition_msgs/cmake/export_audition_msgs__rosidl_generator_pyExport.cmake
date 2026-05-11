@@ -54,8 +54,7 @@ endif()
 add_library(audition_msgs::audition_msgs__rosidl_generator_py SHARED IMPORTED)
 
 set_target_properties(audition_msgs::audition_msgs__rosidl_generator_py PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/moses/miniforge3/lib/python3.12/site-packages/numpy/_core/include"
-  INTERFACE_LINK_LIBRARIES "audition_msgs::audition_msgs__rosidl_generator_c;/home/moses/miniforge3/lib/libpython3.12.so;audition_msgs::audition_msgs__rosidl_typesupport_c;std_msgs::std_msgs__rosidl_generator_py;builtin_interfaces::builtin_interfaces__rosidl_generator_py;action_msgs::action_msgs__rosidl_generator_py;unique_identifier_msgs::unique_identifier_msgs__rosidl_generator_py"
+  INTERFACE_LINK_LIBRARIES "audition_msgs::audition_msgs__rosidl_generator_c;/usr/lib/x86_64-linux-gnu/libpython3.10.so;audition_msgs::audition_msgs__rosidl_typesupport_c;std_msgs::std_msgs__rosidl_generator_py;builtin_interfaces::builtin_interfaces__rosidl_generator_py;action_msgs::action_msgs__rosidl_generator_py;unique_identifier_msgs::unique_identifier_msgs__rosidl_generator_py"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

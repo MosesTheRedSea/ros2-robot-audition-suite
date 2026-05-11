@@ -198,17 +198,43 @@ audition_data_collector_uninstall/fast:
 .PHONY : audition_data_collector_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named marker_navigator_node
+# Target rules for targets named waypoint_manager_node
 
 # Build rule for target.
-marker_navigator_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 marker_navigator_node
-.PHONY : marker_navigator_node
+waypoint_manager_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_manager_node
+.PHONY : waypoint_manager_node
 
 # fast build rule for target.
-marker_navigator_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/marker_navigator_node.dir/build.make CMakeFiles/marker_navigator_node.dir/build
-.PHONY : marker_navigator_node/fast
+waypoint_manager_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager_node.dir/build.make CMakeFiles/waypoint_manager_node.dir/build
+.PHONY : waypoint_manager_node/fast
+
+#=============================================================================
+# Target rules for targets named collection_node
+
+# Build rule for target.
+collection_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 collection_node
+.PHONY : collection_node
+
+# fast build rule for target.
+collection_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collection_node.dir/build.make CMakeFiles/collection_node.dir/build
+.PHONY : collection_node/fast
+
+#=============================================================================
+# Target rules for targets named intervention_server_node
+
+# Build rule for target.
+intervention_server_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intervention_server_node
+.PHONY : intervention_server_node
+
+# fast build rule for target.
+intervention_server_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intervention_server_node.dir/build.make CMakeFiles/intervention_server_node.dir/build
+.PHONY : intervention_server_node/fast
 
 #=============================================================================
 # Target rules for targets named recorder_node
@@ -222,6 +248,67 @@ recorder_node: cmake_check_build_system
 recorder_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recorder_node.dir/build.make CMakeFiles/recorder_node.dir/build
 .PHONY : recorder_node/fast
+
+#=============================================================================
+# Target rules for targets named marker_navigator_node
+
+# Build rule for target.
+marker_navigator_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 marker_navigator_node
+.PHONY : marker_navigator_node
+
+# fast build rule for target.
+marker_navigator_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marker_navigator_node.dir/build.make CMakeFiles/marker_navigator_node.dir/build
+.PHONY : marker_navigator_node/fast
+
+src/collection_node.o: src/collection_node.cpp.o
+.PHONY : src/collection_node.o
+
+# target to build an object file
+src/collection_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collection_node.dir/build.make CMakeFiles/collection_node.dir/src/collection_node.cpp.o
+.PHONY : src/collection_node.cpp.o
+
+src/collection_node.i: src/collection_node.cpp.i
+.PHONY : src/collection_node.i
+
+# target to preprocess a source file
+src/collection_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collection_node.dir/build.make CMakeFiles/collection_node.dir/src/collection_node.cpp.i
+.PHONY : src/collection_node.cpp.i
+
+src/collection_node.s: src/collection_node.cpp.s
+.PHONY : src/collection_node.s
+
+# target to generate assembly for a file
+src/collection_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collection_node.dir/build.make CMakeFiles/collection_node.dir/src/collection_node.cpp.s
+.PHONY : src/collection_node.cpp.s
+
+src/intervention_server_node.o: src/intervention_server_node.cpp.o
+.PHONY : src/intervention_server_node.o
+
+# target to build an object file
+src/intervention_server_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intervention_server_node.dir/build.make CMakeFiles/intervention_server_node.dir/src/intervention_server_node.cpp.o
+.PHONY : src/intervention_server_node.cpp.o
+
+src/intervention_server_node.i: src/intervention_server_node.cpp.i
+.PHONY : src/intervention_server_node.i
+
+# target to preprocess a source file
+src/intervention_server_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intervention_server_node.dir/build.make CMakeFiles/intervention_server_node.dir/src/intervention_server_node.cpp.i
+.PHONY : src/intervention_server_node.cpp.i
+
+src/intervention_server_node.s: src/intervention_server_node.cpp.s
+.PHONY : src/intervention_server_node.s
+
+# target to generate assembly for a file
+src/intervention_server_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intervention_server_node.dir/build.make CMakeFiles/intervention_server_node.dir/src/intervention_server_node.cpp.s
+.PHONY : src/intervention_server_node.cpp.s
 
 src/marker_navigator_node.o: src/marker_navigator_node.cpp.o
 .PHONY : src/marker_navigator_node.o
@@ -271,6 +358,30 @@ src/recorder_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recorder_node.dir/build.make CMakeFiles/recorder_node.dir/src/recorder_node.cpp.s
 .PHONY : src/recorder_node.cpp.s
 
+src/waypoint_manager_node.o: src/waypoint_manager_node.cpp.o
+.PHONY : src/waypoint_manager_node.o
+
+# target to build an object file
+src/waypoint_manager_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager_node.dir/build.make CMakeFiles/waypoint_manager_node.dir/src/waypoint_manager_node.cpp.o
+.PHONY : src/waypoint_manager_node.cpp.o
+
+src/waypoint_manager_node.i: src/waypoint_manager_node.cpp.i
+.PHONY : src/waypoint_manager_node.i
+
+# target to preprocess a source file
+src/waypoint_manager_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager_node.dir/build.make CMakeFiles/waypoint_manager_node.dir/src/waypoint_manager_node.cpp.i
+.PHONY : src/waypoint_manager_node.cpp.i
+
+src/waypoint_manager_node.s: src/waypoint_manager_node.cpp.s
+.PHONY : src/waypoint_manager_node.s
+
+# target to generate assembly for a file
+src/waypoint_manager_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager_node.dir/build.make CMakeFiles/waypoint_manager_node.dir/src/waypoint_manager_node.cpp.s
+.PHONY : src/waypoint_manager_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,14 +397,26 @@ help:
 	@echo "... test"
 	@echo "... audition_data_collector_uninstall"
 	@echo "... uninstall"
+	@echo "... collection_node"
+	@echo "... intervention_server_node"
 	@echo "... marker_navigator_node"
 	@echo "... recorder_node"
+	@echo "... waypoint_manager_node"
+	@echo "... src/collection_node.o"
+	@echo "... src/collection_node.i"
+	@echo "... src/collection_node.s"
+	@echo "... src/intervention_server_node.o"
+	@echo "... src/intervention_server_node.i"
+	@echo "... src/intervention_server_node.s"
 	@echo "... src/marker_navigator_node.o"
 	@echo "... src/marker_navigator_node.i"
 	@echo "... src/marker_navigator_node.s"
 	@echo "... src/recorder_node.o"
 	@echo "... src/recorder_node.i"
 	@echo "... src/recorder_node.s"
+	@echo "... src/waypoint_manager_node.o"
+	@echo "... src/waypoint_manager_node.i"
+	@echo "... src/waypoint_manager_node.s"
 .PHONY : help
 
 

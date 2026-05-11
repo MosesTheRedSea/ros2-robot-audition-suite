@@ -1,0 +1,59 @@
+# ROS 2 build artifacts — never commit these
+build/
+install/
+log/
+ 
+# Rosbag recordings — too large for git
+*.bag
+*.mcap
+*.db3
+audition_bags/
+ 
+# Map files — generated at runtime, not source code
+# Comment these out if you want to commit your map
+*.pgm
+# config/map.yaml
+# config/map.pgm
+ 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+ 
+# Miniforge / conda
+*.egg-info/
+dist/
+*.egg
+ 
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!*Config.cmake
+!*-config.cmake
+ 
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+ 
+# OS files
+.DS_Store
+Thumbs.db
+ 
+# Compiled binaries — built by colcon, not source
+*.so
+*.o
+*.a
+ 
+# Colcon internal files
+COLCON_IGNORE
+colcon_build.rc
+colcon_command_prefix_build.sh
+ 

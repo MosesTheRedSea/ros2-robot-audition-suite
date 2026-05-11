@@ -1,7 +1,0 @@
-[0.009s] Invoking command in '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_data_collector -DCMAKE_INSTALL_PREFIX=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector
-[0.111s] [31mCMake Error at CMakeLists.txt:16:
-[0.111s]   Parse error.  Expected "(", got identifier with text "package".
-[0.111s] 
-[0.111s] [0m
-[0.112s] -- Configuring incomplete, errors occurred!
-[0.118s] Invoked command in '/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_data_collector' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/src/audition_data_collector -DCMAKE_INSTALL_PREFIX=/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector

@@ -1,5 +1,8 @@
-/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/marker_navigator_node
+/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/waypoint_manager_node
+/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/collection_node
+/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/intervention_server_node
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/recorder_node
+/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/lib/audition_data_collector/marker_navigator_node
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/launch/collect.launch.py
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/audition_data_collector/config/params.yaml
 /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_data_collector/share/ament_index/resource_index/package_run_dependencies/audition_data_collector

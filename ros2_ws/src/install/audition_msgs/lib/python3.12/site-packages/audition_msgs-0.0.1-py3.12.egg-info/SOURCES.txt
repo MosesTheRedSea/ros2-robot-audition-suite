@@ -1,6 +1,0 @@
-setup.py
-audition_msgs/__init__.py
-audition_msgs.egg-info/PKG-INFO
-audition_msgs.egg-info/SOURCES.txt
-audition_msgs.egg-info/dependency_links.txt
-audition_msgs.egg-info/top_level.txt

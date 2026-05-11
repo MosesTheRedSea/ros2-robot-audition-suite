@@ -1,0 +1,3 @@
+[submodule "ros2_ws/src/audio_common"]
+	path = ros2_ws/src/audio_common
+	url = https://github.com/ros-drivers/audio_common

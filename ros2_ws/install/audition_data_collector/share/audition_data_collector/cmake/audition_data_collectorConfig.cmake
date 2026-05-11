@@ -16,7 +16,7 @@ set(_audition_data_collector_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT audition_data_collector_FIND_QUIETLY)
-  message(STATUS "Found audition_data_collector: 0.0.0 (${audition_data_collector_DIR})")
+  message(STATUS "Found audition_data_collector: 0.0.1 (${audition_data_collector_DIR})")
 endif()
 
 # warn when using a deprecated package

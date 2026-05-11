@@ -684,4 +684,101 @@ CMakeFiles/recorder_node.dir/src/recorder_node.cpp.o: \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
-  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp
+  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
+  /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/audio_data.hpp \
+  /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__struct.hpp \
+  /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__builder.hpp \
+  /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__traits.hpp \
+  /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__type_support.hpp \
+  /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/serialization.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/bag_events.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/visibility_control.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/converter_options.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writers/sequential_writer.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/cache/cache_consumer.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/cache/cache_buffer_interface.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/serialized_bag_message.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/cache/message_cache.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/cache/message_cache_buffer.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/cache/message_cache_interface.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/cache/circular_message_cache.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/cache/message_cache_circular_buffer.hpp \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/deque \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/deque.tcc \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/converter.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/converter_interfaces/serialization_format_converter.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/converter_interfaces/serialization_format_serializer.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/types/introspection_message.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/converter_interfaces/serialization_format_deserializer.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/serialization_format_converter_factory.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/serialization_format_converter_factory_interface.hpp \
+  /opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer_interfaces/base_writer_interface.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_options.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/visibility_control.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/yaml.hpp \
+  /usr/include/yaml-cpp/yaml.h /usr/include/yaml-cpp/parser.h \
+  /usr/include/yaml-cpp/dll.h /usr/include/yaml-cpp/emitter.h \
+  /usr/include/yaml-cpp/binary.h /usr/include/yaml-cpp/emitterdef.h \
+  /usr/include/yaml-cpp/emittermanip.h /usr/include/yaml-cpp/null.h \
+  /usr/include/yaml-cpp/ostream_wrapper.h \
+  /usr/include/yaml-cpp/emitterstyle.h \
+  /usr/include/yaml-cpp/stlemitter.h /usr/include/yaml-cpp/exceptions.h \
+  /usr/include/yaml-cpp/mark.h /usr/include/yaml-cpp/noexcept.h \
+  /usr/include/yaml-cpp/traits.h /usr/include/yaml-cpp/node/node.h \
+  /usr/include/yaml-cpp/node/detail/iterator_fwd.h \
+  /usr/include/yaml-cpp/node/ptr.h /usr/include/yaml-cpp/node/type.h \
+  /usr/include/yaml-cpp/node/impl.h \
+  /usr/include/yaml-cpp/node/detail/memory.h \
+  /usr/include/yaml-cpp/node/detail/node.h \
+  /usr/include/yaml-cpp/node/detail/node_ref.h \
+  /usr/include/yaml-cpp/node/detail/node_data.h \
+  /usr/include/yaml-cpp/node/detail/node_iterator.h \
+  /usr/include/yaml-cpp/node/iterator.h \
+  /usr/include/yaml-cpp/node/detail/iterator.h \
+  /usr/include/yaml-cpp/node/convert.h \
+  /usr/include/yaml-cpp/node/detail/impl.h \
+  /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/topic_metadata.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/metadata_io.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/bag_metadata.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_factory.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_factory_interface.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_interfaces/read_only_interface.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_filter.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_interfaces/base_info_interface.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_interfaces/base_io_interface.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_interfaces/base_read_interface.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_traits.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_interfaces/read_write_interface.hpp \
+  /opt/ros/humble/include/rosbag2_storage/rosbag2_storage/storage_interfaces/base_write_interface.hpp
