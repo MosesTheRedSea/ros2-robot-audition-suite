@@ -21,7 +21,6 @@ def generate_launch_description():
 
     return LaunchDescription([
 
-        # Gazebo
         ExecuteProcess(
             cmd=['gazebo', '--verbose', world_file,
                  '-s', 'libgazebo_ros_init.so',
@@ -29,7 +28,7 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # robot state publisher
+        
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -39,8 +38,7 @@ def generate_launch_description():
             }],
             output='screen'
         ),
-
-        # spawn robot
+ 
         Node(
             package='gazebo_ros',
             executable='spawn_entity.py',
@@ -52,7 +50,7 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # SLAM toolbox — builds map AND localizes, no initial pose needed
+        
         TimerAction(period=5.0, actions=[
             Node(
                 package='slam_toolbox',
@@ -69,7 +67,7 @@ def generate_launch_description():
             ),
         ]),
 
-        # Nav2 — delayed to let SLAM start first
+        
         TimerAction(period=8.0, actions=[
             IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(
@@ -81,7 +79,7 @@ def generate_launch_description():
             ),
         ]),
 
-        # your collection nodes — delayed to let Nav2 start
+        
         TimerAction(period=15.0, actions=[
             Node(
                 package='audition_data_collector',
@@ -108,7 +106,7 @@ def generate_launch_description():
             ),
         ]),
 
-        # RViz — delayed to let map frame exist
+    
         TimerAction(period=8.0, actions=[
             Node(
                 package='rviz2',

@@ -8,10 +8,9 @@
 #include <string>
 #include <thread>
 
-using NavigateToPose = nav2_msgs::action::NavigateToPose; // Navigate to position
+using NavigateToPose = nav2_msgs::action::NavigateToPose;
 using GoalHandleNav = rclcpp_action::ClientGoalHandle<NavigateToPose>;
 
-// Waypoint has x, y and label associated with it
 struct Waypoint {
   int id;
   std::string label;
@@ -27,13 +26,11 @@ public:
   WaypointManagerNode() : Node("waypoint_manager_node"), current_index(0), waiting(false)
   {
 
-    // add parameters, labels, x and y along with yaw
     declare_parameter("waypoints.labels", std::vector<std::string>{});
     declare_parameter("waypoints.x", std::vector<double>{});
     declare_parameter("waypoints.y", std::vector<double>{});
     declare_parameter("waypoints.yaw", std::vector<double>{});
   
-    // This publisher published the current waypoint the robot is at
     waypoint_pub = create_publisher<audition_msgs::msg::CollectionStatus>("/current_waypoint", 10);
     proceed_sub = create_subscription<std_msgs::msg::Bool>("/proceed_command", 10, std::bind(&WaypointManagerNode::proceedCallback, this, std::placeholders::_1));
     nav_client = rclcpp_action::create_client<NavigateToPose>(this, "navigate_to_pose");
