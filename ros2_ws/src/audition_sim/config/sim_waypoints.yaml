@@ -1,0 +1,7 @@
+waypoint_manager_node:
+  ros__parameters:
+    waypoints:
+      labels: ["sofa_occlusion", "cabinet_occlusion", "table_occlusion", "bookshelf_occlusion"]
+      x:      [1.5,              -2.5,                -1.5,              2.5                 ]
+      y:      [2.5,               1.5,                -2.5,             -1.5                 ]
+      yaw:    [3.14,              1.57,                0.0,             -1.57                ]

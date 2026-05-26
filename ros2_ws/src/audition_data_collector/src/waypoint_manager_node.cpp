@@ -8,9 +8,10 @@
 #include <string>
 #include <thread>
 
-using NavigateToPose = nav2_msgs::action::NavigateToPose;
+using NavigateToPose = nav2_msgs::action::NavigateToPose; // Navigate to position
 using GoalHandleNav = rclcpp_action::ClientGoalHandle<NavigateToPose>;
 
+// Waypoint has x, y and label associated with it
 struct Waypoint {
   int id;
   std::string label;
@@ -19,30 +20,29 @@ struct Waypoint {
   double yaw;
 };
 
+
 class WaypointManagerNode : public rclcpp::Node
 {
 public:
   WaypointManagerNode() : Node("waypoint_manager_node"), current_index(0), waiting(false)
   {
+
+    // add parameters, labels, x and y along with yaw
     declare_parameter("waypoints.labels", std::vector<std::string>{});
     declare_parameter("waypoints.x", std::vector<double>{});
     declare_parameter("waypoints.y", std::vector<double>{});
     declare_parameter("waypoints.yaw", std::vector<double>{});
-
-    waypoint_pub = create_publisher<audition_msgs::msg::CollectionStatus>(
-      "/current_waypoint", 10);
-
-    proceed_sub = create_subscription<std_msgs::msg::Bool>(
-      "/proceed_command", 10,
-      std::bind(&WaypointManagerNode::proceedCallback, this, std::placeholders::_1));
-
-    nav_client = rclcpp_action::create_client<NavigateToPose>(
-      this, "navigate_to_pose");
+  
+    // This publisher published the current waypoint the robot is at
+    waypoint_pub = create_publisher<audition_msgs::msg::CollectionStatus>("/current_waypoint", 10);
+    proceed_sub = create_subscription<std_msgs::msg::Bool>("/proceed_command", 10, std::bind(&WaypointManagerNode::proceedCallback, this, std::placeholders::_1));
+    nav_client = rclcpp_action::create_client<NavigateToPose>(this, "navigate_to_pose");
 
     loadWaypoints();
 
     RCLCPP_INFO(get_logger(), "Waypoint manager ready — %zu waypoints loaded",
                 waypoints.size());
+
 
     std::thread([this]() {
       RCLCPP_INFO(get_logger(), "Waiting for Nav2 action server...");
@@ -54,6 +54,8 @@ public:
       sendNextGoal();
     }).detach();
   }
+
+
 
 private:
   enum class State { NAVIGATING, WAITING, DONE };

@@ -14,13 +14,9 @@ class Intervention : public rclcpp::Node
     {
       
       proceed_pub = create_publisher<std_msgs::msg::Bool>("/proceed_command", 10);
-
       proceed_server = create_service<audition_msgs::srv::ProceedToNext>("/proceed_to_next", std::bind(&Intervention::handleProceed, this, std::placeholders::_1, std::placeholders::_2));
       
-      abort_server = create_service<audition_msgs::srv::AbortSession>(
-          "/abort_session",
-          std::bind(&Intervention::handleAbort, this,
-                    std::placeholders::_1, std::placeholders::_2));
+      abort_server = create_service<audition_msgs::srv::AbortSession>("/abort_session", std::bind(&Intervention::handleAbort, this, std::placeholders::_1, std::placeholders::_2));
       
       RCLCPP_INFO(get_logger(), "Intervention Server Online — waiting for operator commands");
       
@@ -64,7 +60,9 @@ class Intervention : public rclcpp::Node
   }
 
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr proceed_pub;
+
   rclcpp::Service<audition_msgs::srv::ProceedToNext>::SharedPtr proceed_server;
+
   rclcpp::Service<audition_msgs::srv::AbortSession>::SharedPtr abort_server;
 
 };

@@ -16,39 +16,32 @@ class RecorderNode : public rclcpp::Node
 public:
   RecorderNode() : Node("recorder_node"), recording(false)
   {
-    this->declare_parameter("output_dir", "/home/moses/audition_bags");
+    
+    // This Parameter holds the directory where we store the recordings
+    this->declare_parameter("output_dir","/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/recordings");
+      
+    // These are subcribers for the different types of data we can collect
+    trigger_sub = create_subscription<std_msgs::msg::Bool>("/record_trigger", 10, std::bind(&RecorderNode::triggerCallback, this, std::placeholders::_1));
 
-    trigger_sub = create_subscription<std_msgs::msg::Bool>(
-      "/record_trigger", 10,
-      std::bind(&RecorderNode::triggerCallback, this, std::placeholders::_1));
+    depth_sub = create_subscription<sensor_msgs::msg::Image>("/camera/depth/image_raw", 10, std::bind(&RecorderNode::depthCallback, this, std::placeholders::_1));
 
-    depth_sub = create_subscription<sensor_msgs::msg::Image>(
-      "/camera/depth/image_raw", 10,
-      std::bind(&RecorderNode::depthCallback, this, std::placeholders::_1));
+    color_sub = create_subscription<sensor_msgs::msg::Image>("/camera/color/image_raw", 10, std::bind(&RecorderNode::colorCallback, this, std::placeholders::_1));
 
-    color_sub = create_subscription<sensor_msgs::msg::Image>(
-      "/camera/color/image_raw", 10,
-      std::bind(&RecorderNode::colorCallback, this, std::placeholders::_1));
+    scan_sub = create_subscription<sensor_msgs::msg::LaserScan>("/scan", 10, std::bind(&RecorderNode::scanCallback, this, std::placeholders::_1));
 
-    scan_sub = create_subscription<sensor_msgs::msg::LaserScan>(
-      "/scan", 10,
-      std::bind(&RecorderNode::scanCallback, this, std::placeholders::_1));
+    pointcloud_sub = create_subscription<sensor_msgs::msg::PointCloud2>("/camera/depth/points", 10, std::bind(&RecorderNode::pointcloudCallback, this, std::placeholders::_1));
 
-    pointcloud_sub = create_subscription<sensor_msgs::msg::PointCloud2>(
-      "/camera/depth/points", 10,
-      std::bind(&RecorderNode::pointcloudCallback, this, std::placeholders::_1));
-
-    audio_sub = create_subscription<audio_common_msgs::msg::AudioData>(
-      "/audio_capture", 10,
-      std::bind(&RecorderNode::audioCallback, this, std::placeholders::_1));
+    audio_sub = create_subscription<audio_common_msgs::msg::AudioData>("/audio_capture", 10, std::bind(&RecorderNode::audioCallback, this, std::placeholders::_1));
 
     RCLCPP_INFO(get_logger(), "Recorder ready — waiting for trigger on /record_trigger");
   }
 
 private:
-  // fix: SharedPtr → ConstSharedPtr on every callback
+
   void triggerCallback(const std_msgs::msg::Bool::ConstSharedPtr msg)
   {
+
+    // if msg->data is true and we're not recoding start recording
     if (msg->data && !recording) {
       startRecording();
     } else if (!msg->data && recording) {
@@ -58,6 +51,7 @@ private:
 
   void startRecording()
   {
+
     std::string output_dir = this->get_parameter("output_dir").as_string();
     std::string timestamp = std::to_string(std::time(nullptr));
     std::string bag_path = output_dir + "/session_" + timestamp;
@@ -83,7 +77,7 @@ private:
     RCLCPP_INFO(get_logger(), "Recording stopped — bag saved");
   }
 
-  // fix: SharedPtr → ConstSharedPtr in template too
+  
   template<typename T>
   void writeMessage(const typename T::ConstSharedPtr msg, const std::string & topic)
   {
@@ -94,16 +88,15 @@ private:
     serializer.serialize_message(msg.get(), &serialized_msg);
 
     auto bag_msg = std::make_shared<rosbag2_storage::SerializedBagMessage>();
-    bag_msg->serialized_data = std::shared_ptr<rcutils_uint8_array_t>(
-      &serialized_msg.get_rcl_serialized_message(),
-      [](rcutils_uint8_array_t *) {});
+    bag_msg->serialized_data = std::shared_ptr<rcutils_uint8_array_t>(&serialized_msg.get_rcl_serialized_message(), [](rcutils_uint8_array_t *) {});
+
     bag_msg->topic_name = topic;
     bag_msg->time_stamp = this->now().nanoseconds();
 
     writer->write(bag_msg);
   }
 
-  // fix: all callbacks use ConstSharedPtr
+  
   void depthCallback(const sensor_msgs::msg::Image::ConstSharedPtr msg)
   {
     writeMessage<sensor_msgs::msg::Image>(msg, "/camera/depth/image_raw");

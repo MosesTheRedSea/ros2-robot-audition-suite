@@ -4,3 +4,10 @@ audition_msgs.egg-info/PKG-INFO
 audition_msgs.egg-info/SOURCES.txt
 audition_msgs.egg-info/dependency_links.txt
 audition_msgs.egg-info/top_level.txt
+audition_msgs/action/__init__.py
+audition_msgs/action/_collect_at_waypoint.py
+audition_msgs/msg/__init__.py
+audition_msgs/msg/_collection_status.py
+audition_msgs/srv/__init__.py
+audition_msgs/srv/_abort_session.py
+audition_msgs/srv/_proceed_to_next.py

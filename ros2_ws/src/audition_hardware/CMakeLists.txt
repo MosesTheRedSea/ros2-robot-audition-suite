@@ -17,12 +17,16 @@ find_package(tf2_ros REQUIRED)
 add_executable(motor_test src/motor_test.cpp)
 ament_target_dependencies(motor_test rclcpp geometry_msgs)
 
+add_executable(hardware_bridge src/hardware_bridge.cpp)
+ament_target_dependencies(hardware_bridge rclcpp geometry_msgs)
+
 add_executable(cmd_vel_relay src/cmd_vel_relay.cpp)
 ament_target_dependencies(cmd_vel_relay rclcpp geometry_msgs)
 
 install(TARGETS
   motor_test
-  cmd_vel_relay
+  cmd_vel_relay  
+  hardware_bridge
   DESTINATION lib/${PROJECT_NAME}
 )
 

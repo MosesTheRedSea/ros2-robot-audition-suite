@@ -9,8 +9,7 @@ class MotorTest : public rclcpp::Node
 public:
   MotorTest() : Node("motor_test")
   {
-    // Tune these without recompiling:
-    // ros2 run audition_hardware motor_test --ros-args -p linear_speed:=0.15
+
     this->declare_parameter("linear_speed",  0.2);  // m/s  — start slow
     this->declare_parameter("angular_speed", 0.5);  // rad/s
 
@@ -68,28 +67,25 @@ private:
 
   void run_test()
   {
-    // ── Test 1: Forward ───────────────────────────────────────
-    // 0.2 m/s × 3s ≈ 0.6 meters forward
+ 
     move(linear_speed_, 0.0, 3.0, "TEST 1: Moving forward");
 
-    // ── Test 2: Turn left 90 degrees ─────────────────────────
-    // time = (π/2) / angular_speed
+
     double t90 = (M_PI / 2.0) / angular_speed_;
     move(0.0, angular_speed_, t90, "TEST 2: Turning left 90 degrees");
 
-    // ── Test 3: Turn right 90 degrees ────────────────────────
-    // negative angular = right
+
     move(0.0, -angular_speed_, t90, "TEST 3: Turning right 90 degrees");
 
-    // ── Test 4: Full 360 spin ─────────────────────────────────
-    // time = (2π) / angular_speed
+
     double t360 = (2.0 * M_PI) / angular_speed_;
     move(0.0, angular_speed_, t360, "TEST 4: Full 360 spin");
 
-    // ── Test 5: Backward ──────────────────────────────────────
-    move(-linear_speed_, 0.0, 3.0, "TEST 5: Moving backward");
 
-    // ── Done ──────────────────────────────────────────────────
+    move(-linear_speed_, 0.0, 3.0, "TEST 5: Moving backward");
+    
+    // This is my favorite 
+
     RCLCPP_INFO(this->get_logger(), "=================================");
     RCLCPP_INFO(this->get_logger(), "All tests complete — robot stopped");
     RCLCPP_INFO(this->get_logger(), "=================================");
