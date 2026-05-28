@@ -32,6 +32,12 @@ This project automates the collection of:
 - occlusion-aware acoustic measurements
 using a mobile robot operating in ROS2.
 
+# Simulation
+
+
+
+# Real World
+
 
 
 
