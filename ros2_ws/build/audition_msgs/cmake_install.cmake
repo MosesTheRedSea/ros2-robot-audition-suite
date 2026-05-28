@@ -258,7 +258,7 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/usr/bin/python3.10" "-m" "compileall"
+        "/usr/bin/python3" "-m" "compileall"
         "/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audition_msgs/local/lib/python3.10/dist-packages/audition_msgs"
       )
 endif()

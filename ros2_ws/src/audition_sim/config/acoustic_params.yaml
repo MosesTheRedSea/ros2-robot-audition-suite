@@ -1,0 +1,11 @@
+acoustic_recorder:
+  ros__parameters:
+    excitation_path: '/path/to/your/excitation.wav'
+    output_dir: '/home/moses/audition_bags/acoustic'
+    channels: 16
+    repeat: 8
+    sleep_duration: 3
+    start_sample: 4900
+    end_sample: 6000
+    mic_device: 1
+    speaker_device: 2

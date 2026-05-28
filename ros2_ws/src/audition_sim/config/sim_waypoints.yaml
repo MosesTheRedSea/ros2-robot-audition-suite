@@ -1,4 +1,4 @@
-waypoint_manager_node:
+waypoint:
   ros__parameters:
     waypoints:
       labels: ["sofa_occlusion", "cabinet_occlusion", "table_occlusion", "bookshelf_occlusion"]

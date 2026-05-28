@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_audition_msgs_egg.dir/compiler_depen
 include CMakeFiles/ament_cmake_python_build_audition_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_audition_msgs_egg:
-	cd /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_msgs/ament_cmake_python/audition_msgs && /usr/bin/python3.10 setup.py egg_info
+	cd /home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/build/audition_msgs/ament_cmake_python/audition_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_audition_msgs_egg: CMakeFiles/ament_cmake_python_build_audition_msgs_egg
 ament_cmake_python_build_audition_msgs_egg: CMakeFiles/ament_cmake_python_build_audition_msgs_egg.dir/build.make

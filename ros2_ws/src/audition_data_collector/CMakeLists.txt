@@ -1,12 +1,9 @@
 
 cmake_minimum_required(VERSION 3.8)
-
 project(audition_data_collector)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-
   add_compile_options(-Wall -Wextra -Wpedantic)
-
 endif()
 
 find_package(ament_cmake REQUIRED)
@@ -41,37 +38,28 @@ set(dependencies
   rosbag2_storage
 )
 
-# waypoint manager node
+add_executable(waypoint src/waypoint.cpp)
+ament_target_dependencies(waypoint ${dependencies})
 
-add_executable(waypoint_manager_node src/waypoint_manager_node.cpp)
 
-ament_target_dependencies(waypoint_manager_node ${dependencies})
+add_executable(collector src/collector.cpp)
+ament_target_dependencies(collector ${dependencies})
 
-# collection node
+add_executable(handler src/handler.cpp)
+ament_target_dependencies(handler ${dependencies})
 
-add_executable(collection_node src/collection_node.cpp)
 
-ament_target_dependencies(collection_node ${dependencies})
+add_executable(recorder src/recorder.cpp)
+ament_target_dependencies(recorder ${dependencies})
 
-# intervention server node
-
-add_executable(intervention_server_node src/intervention_server_node.cpp)
-
-ament_target_dependencies(intervention_server_node ${dependencies})
-
-# recorder node
-
-add_executable(recorder_node src/recorder_node.cpp)
-ament_target_dependencies(recorder_node ${dependencies})
-target_include_directories(recorder_node PUBLIC
+target_include_directories(recorder PUBLIC
   ~/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/install/audio_common_msgs/include/audio_common_msgs
 )
 
-# marker navigator node
-
-add_executable(marker_navigator_node src/marker_navigator_node.cpp)
-
-ament_target_dependencies(marker_navigator_node ${dependencies})
+install(PROGRAMS
+  scripts/acoustic_recorder.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 include_directories(
   ${audio_common_msgs_INCLUDE_DIRS}
@@ -79,15 +67,13 @@ include_directories(
 
 install(TARGETS
 
-  waypoint_manager_node
+  waypoint
 
-  collection_node
+  collector
 
-  intervention_server_node
+  handler
 
-  recorder_node
-
-  marker_navigator_node
+  recorder
 
   DESTINATION lib/${PROJECT_NAME})
 

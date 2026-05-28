@@ -11,10 +11,11 @@ def generate_launch_description():
     sim_pkg  = get_package_share_directory('audition_sim')
     nav2_pkg = get_package_share_directory('nav2_bringup')
 
-    urdf_file        = os.path.join(sim_pkg, 'urdf', 'robot.urdf.xacro')
-    world_file       = os.path.join(sim_pkg, 'worlds', 'room.world')
-    nav2_params      = os.path.join(sim_pkg, 'config', 'nav2_params.yaml')
+    urdf_file = os.path.join(sim_pkg, 'urdf', 'robot.urdf.xacro')
+    world_file = os.path.join(sim_pkg, 'worlds', 'room.world')
+    nav2_params = os.path.join(sim_pkg, 'config', 'nav2_params.yaml')
     waypoints_config = os.path.join(sim_pkg, 'config', 'sim_waypoints.yaml')
+    acoustic_params = os.path.join(sim_pkg, "config", "acoustic_params.yaml")
 
     robot_description = subprocess.check_output(
         ['xacro', urdf_file]).decode('utf-8')
@@ -28,7 +29,6 @@ def generate_launch_description():
             output='screen'
         ),
 
-        
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -79,31 +79,40 @@ def generate_launch_description():
             ),
         ]),
 
-        
         TimerAction(period=15.0, actions=[
             Node(
                 package='audition_data_collector',
-                executable='waypoint_manager_node',
+                executable='waypoint',
                 parameters=[waypoints_config, {'use_sim_time': True}],
                 output='screen'
             ),
+
             Node(
                 package='audition_data_collector',
-                executable='collection_node',
+                executable='collector',
                 parameters=[{'use_sim_time': True}],
                 output='screen'
             ),
             Node(
                 package='audition_data_collector',
-                executable='intervention_server_node',
+                executable='handler',
+                parameters=[{'use_sim_time': True}],
                 output='screen'
             ),
+
             Node(
                 package='audition_data_collector',
-                executable='recorder_node',
-                parameters=[{'output_dir': '/home/moses/audition_bags'}],
+                executable='recorder',
+                parameters=[{'output_dir': '/home/moses/audition_bags', 'use_sim_time': True}],
                 output='screen'
             ),
+
+            #Node(
+            #    package='audition_data_collector',
+            #    executable='acoustic_recorder.py',
+            #    parameters=[acoustic_params],
+            #    output='screen'
+            #),
         ]),
 
     

@@ -967,9 +967,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/audition_data_collector_uninstall.dir/DependInfo.cmake"
-  "CMakeFiles/waypoint_manager_node.dir/DependInfo.cmake"
-  "CMakeFiles/collection_node.dir/DependInfo.cmake"
-  "CMakeFiles/intervention_server_node.dir/DependInfo.cmake"
-  "CMakeFiles/recorder_node.dir/DependInfo.cmake"
-  "CMakeFiles/marker_navigator_node.dir/DependInfo.cmake"
+  "CMakeFiles/waypoint.dir/DependInfo.cmake"
+  "CMakeFiles/collector.dir/DependInfo.cmake"
+  "CMakeFiles/handler.dir/DependInfo.cmake"
+  "CMakeFiles/recorder.dir/DependInfo.cmake"
   )
