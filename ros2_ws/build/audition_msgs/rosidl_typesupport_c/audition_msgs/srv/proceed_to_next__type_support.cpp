@@ -4,8 +4,8 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
+#include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 #include "audition_msgs/srv/detail/proceed_to_next__struct.h"
-#include "audition_msgs/srv/detail/proceed_to_next__type_support.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -85,6 +85,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, srv, ProceedToNext_Request)() {
   return &::audition_msgs::srv::rosidl_typesupport_c::ProceedToNext_Request_message_type_support_handle;
@@ -99,9 +100,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "audition_msgs/srv/detail/proceed_to_next__struct.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "audition_msgs/srv/detail/proceed_to_next__type_support.h"
+// #include "audition_msgs/srv/detail/proceed_to_next__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -186,6 +187,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, srv, ProceedToNext_Response)() {
   return &::audition_msgs::srv::rosidl_typesupport_c::ProceedToNext_Response_message_type_support_handle;
@@ -199,7 +201,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // #include "cstddef"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
-// #include "audition_msgs/srv/detail/proceed_to_next__type_support.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/service_type_support_dispatch.h"
@@ -281,6 +283,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_service_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, srv, ProceedToNext)() {
   return &::audition_msgs::srv::rosidl_typesupport_c::ProceedToNext_service_type_support_handle;

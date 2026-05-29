@@ -3,10 +3,13 @@
 #include "sensor_msgs/msg/image.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
-#include "audio_common_msgs/msg/audio_data.hpp"
+#include "rosbag2_cpp/writers/sequential_writer.hpp"
 #include "rosbag2_cpp/writer.hpp"
-#include "rosbag2_storage/storage_options.hpp"
+#include "rosbag2_cpp/storage_options.hpp"
+#include "rosbag2_cpp/converter_options.hpp"
+#include "rosbag2_storage/serialized_bag_message.hpp"
 #include "rclcpp/serialization.hpp"
+#include <cstring>
 #include <memory>
 #include <string>
 #include <ctime>
@@ -16,130 +19,178 @@ class Recorder : public rclcpp::Node
 public:
   Recorder() : Node("recorder"), recording(false)
   {
-    
-    // This Parameter holds the directory where we store the recordings
-    this->declare_parameter("output_dir","/home/moses/Moses/Robotics/ROS-Projects/audition-data-collection/ros2-robot-audition-suite/ros2_ws/recordings");
-    
-    // These are subcribers for the different types of data we can collect
-    trigger_sub = create_subscription<std_msgs::msg::Bool>("/record_trigger", 10, std::bind(&Recorder::triggerCallback, this, std::placeholders::_1));
-    depth_sub = create_subscription<sensor_msgs::msg::Image>("/camera/depth/image_raw", 10, std::bind(&Recorder::depthCallback, this, std::placeholders::_1));
-    color_sub = create_subscription<sensor_msgs::msg::Image>("/camera/color/image_raw", 10, std::bind(&Recorder::colorCallback, this, std::placeholders::_1));
+    declare_parameter("output_dir", "/tmp/bags");
 
-    scan_sub = create_subscription<sensor_msgs::msg::LaserScan>("/scan", 10, std::bind(&Recorder::scanCallback, this, std::placeholders::_1));
-    pointcloud_sub = create_subscription<sensor_msgs::msg::PointCloud2>("/camera/depth/points", 10, std::bind(&Recorder::pointcloudCallback, this, std::placeholders::_1));
+    trigger_sub = create_subscription<std_msgs::msg::Bool>(
+      "/record_trigger", 10,
+      std::bind(&Recorder::triggerCallback, this, std::placeholders::_1));
 
-    audio_sub = create_subscription<audio_common_msgs::msg::AudioData>("/audio_capture", 10, std::bind(&Recorder::audioCallback, this, std::placeholders::_1));
-    RCLCPP_INFO(get_logger(), "Recorder ready — waiting for trigger on /record_trigger");
+    depth_sub = create_subscription<sensor_msgs::msg::Image>(
+      "/camera/depth/image_raw", 10,
+      std::bind(&Recorder::depthCallback, this, std::placeholders::_1));
+
+    color_sub = create_subscription<sensor_msgs::msg::Image>(
+      "/camera/color/image_raw", 10,
+      std::bind(&Recorder::colorCallback, this, std::placeholders::_1));
+
+    scan_sub = create_subscription<sensor_msgs::msg::LaserScan>(
+      "/scan", 10,
+      std::bind(&Recorder::scanCallback, this, std::placeholders::_1));
+
+    pointcloud_sub = create_subscription<sensor_msgs::msg::PointCloud2>(
+      "/camera/depth/points", 10,
+      std::bind(&Recorder::pointcloudCallback, this, std::placeholders::_1));
+
+    RCLCPP_INFO(get_logger(), "Recorder ready");
   }
 
 private:
+  bool recording;
+  std::unique_ptr<rosbag2_cpp::Writer> writer;
+
+  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr trigger_sub;
+  rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr depth_sub;
+  rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr color_sub;
+  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub;
+  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pointcloud_sub;
 
   void triggerCallback(const std_msgs::msg::Bool::ConstSharedPtr msg)
   {
+    if (msg->data && !recording) startRecording();
+    else if (!msg->data && recording) stopRecording();
+  }
 
-    // if msg->data is true and we're not recoding start recording
-    if (msg->data && !recording) {   
-      startRecording();
-    } else if (!msg->data && recording) {
-      stopRecording();
-    }
+  rosbag2_storage::TopicMetadata makeTopicMetadata(
+    const std::string & topic_name,
+    const std::string & type_name)
+  {
+    rosbag2_storage::TopicMetadata metadata;
+  
+    metadata.name = topic_name;
+    metadata.type = type_name;
+    metadata.serialization_format = "cdr";
+    metadata.offered_qos_profiles = "";
+  
+    return metadata;
   }
 
   void startRecording()
   {
+    std::string dir = get_parameter("output_dir").as_string();
+    std::string path = dir + "/session_" + std::to_string(std::time(nullptr));
 
-    std::string output_dir = this->get_parameter("output_dir").as_string();
-    std::string timestamp = std::to_string(std::time(nullptr));
-    std::string bag_path = output_dir + "/session_" + timestamp;
+    rosbag2_cpp::StorageOptions storage_options;
+    storage_options.uri = path;
+    storage_options.storage_id = "sqlite3";
 
-    rosbag2_storage::StorageOptions storage_options;
-    storage_options.uri = bag_path;
-    storage_options.storage_id = "mcap";
+    rosbag2_cpp::ConverterOptions converter_options;
+    converter_options.input_serialization_format = "cdr";
+    converter_options.output_serialization_format = "cdr";
 
-    writer = std::make_unique<rosbag2_cpp::Writer>();
-    writer->open(storage_options);
+    writer = std::make_unique<rosbag2_cpp::Writer>(
+      std::make_unique<rosbag2_cpp::writers::SequentialWriter>());
+    writer->open(storage_options, converter_options);
+
+    writer->create_topic(makeTopicMetadata(
+      "/camera/depth/image_raw",
+      "sensor_msgs/msg/Image"));
+    
+    writer->create_topic(makeTopicMetadata(
+      "/camera/color/image_raw",
+      "sensor_msgs/msg/Image"));
+    
+    writer->create_topic(makeTopicMetadata(
+      "/scan",
+      "sensor_msgs/msg/LaserScan"));
+    
+    writer->create_topic(makeTopicMetadata(
+      "/camera/depth/points",
+      "sensor_msgs/msg/PointCloud2"));
 
     recording = true;
-    RCLCPP_INFO(get_logger(), "Recording started — saving to %s", bag_path.c_str());
+    RCLCPP_INFO(get_logger(), "Recording started");
   }
 
   void stopRecording()
   {
-    if (writer) {
-      writer->close();
-      writer.reset();
-    }
+    writer.reset();
     recording = false;
-    RCLCPP_INFO(get_logger(), "Recording stopped — bag saved");
+    RCLCPP_INFO(get_logger(), "Recording stopped");
   }
 
-  
   template<typename T>
   void writeMessage(const typename T::ConstSharedPtr msg, const std::string & topic)
   {
+    if (!recording || !writer) {
+      return;
+    }
 
-    if (!recording || !writer) return;
-
+    // Serialize ROS2 message
     rclcpp::Serialization<T> serializer;
     rclcpp::SerializedMessage serialized_msg;
+
     serializer.serialize_message(msg.get(), &serialized_msg);
 
-    auto bag_msg = std::make_shared<rosbag2_storage::SerializedBagMessage>();
-    bag_msg->serialized_data = std::shared_ptr<rcutils_uint8_array_t>(&serialized_msg.get_rcl_serialized_message(), [](rcutils_uint8_array_t *) {});
+    // Create bag message
+    auto bag_msg =
+      std::make_shared<rosbag2_storage::SerializedBagMessage>();
 
     bag_msg->topic_name = topic;
     bag_msg->time_stamp = this->now().nanoseconds();
 
-    writer->write(bag_msg);
+    // Copy serialized data
+    auto & rcl_msg = serialized_msg.get_rcl_serialized_message();
 
+    bag_msg->serialized_data =
+      std::make_shared<rcutils_uint8_array_t>();
+
+    *bag_msg->serialized_data =
+      rcutils_get_zero_initialized_uint8_array();
+
+    rcutils_allocator_t allocator =
+      rcutils_get_default_allocator();
+
+    auto ret = rcutils_uint8_array_init(
+      bag_msg->serialized_data.get(),
+      rcl_msg.buffer_length,
+      &allocator);
+
+    if (ret != RCUTILS_RET_OK) {
+      RCLCPP_ERROR(
+        get_logger(),
+        "Failed to initialize serialized data");
+      return;
+    }
+
+    std::memcpy(
+      bag_msg->serialized_data->buffer,
+      rcl_msg.buffer,
+      rcl_msg.buffer_length);
+
+    bag_msg->serialized_data->buffer_length =
+      rcl_msg.buffer_length;
+
+    writer->write(bag_msg);
   }
 
   void depthCallback(const sensor_msgs::msg::Image::ConstSharedPtr msg)
-  {
-    writeMessage<sensor_msgs::msg::Image>(msg, "/camera/depth/image_raw");
-  }
+  { writeMessage<sensor_msgs::msg::Image>(msg, "/camera/depth/image_raw"); }
 
   void colorCallback(const sensor_msgs::msg::Image::ConstSharedPtr msg)
-  {
-    writeMessage<sensor_msgs::msg::Image>(msg, "/camera/color/image_raw");
-  }
+  { writeMessage<sensor_msgs::msg::Image>(msg, "/camera/color/image_raw"); }
 
   void scanCallback(const sensor_msgs::msg::LaserScan::ConstSharedPtr msg)
-  {
-    writeMessage<sensor_msgs::msg::LaserScan>(msg, "/scan");
-  }
-  
-  void pointcloudCallback(const sensor_msgs::msg::PointCloud2::ConstSharedPtr msg)
-  {
-    writeMessage<sensor_msgs::msg::PointCloud2>(msg, "/camera/depth/points");
-  }
-  
-  void audioCallback(const audio_common_msgs::msg::AudioData::ConstSharedPtr msg)
-  {
-    writeMessage<audio_common_msgs::msg::AudioData>(msg, "/audio_capture");
-  } 
-  
-  
-  bool recording;
-  
-  std::unique_ptr<rosbag2_cpp::Writer> writer;
-  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr trigger_sub;
-  
-  rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr depth_sub;
-  rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr color_sub;
-  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub;
-  
-  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pointcloud_sub;
-  rclcpp::Subscription<audio_common_msgs::msg::AudioData>::SharedPtr audio_sub;
+  { writeMessage<sensor_msgs::msg::LaserScan>(msg, "/scan"); }
 
+  void pointcloudCallback(const sensor_msgs::msg::PointCloud2::ConstSharedPtr msg)
+  { writeMessage<sensor_msgs::msg::PointCloud2>(msg, "/camera/depth/points"); }
 };
 
-int main(int argc, char * argv[])
+int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<Recorder>());
   rclcpp::shutdown();
-
   return 0;
 }
 

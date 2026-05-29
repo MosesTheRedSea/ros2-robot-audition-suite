@@ -26,7 +26,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_init_function(
+void CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -35,12 +35,12 @@ void audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__C
   audition_msgs__msg__CollectionStatus__init(message_memory);
 }
 
-void audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_fini_function(void * message_memory)
+void CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_fini_function(void * message_memory)
 {
   audition_msgs__msg__CollectionStatus__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_member_array[7] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_member_array[7] = {
   {
     "header",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -54,8 +54,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__msg__Col
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -71,8 +69,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__msg__Col
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -88,8 +84,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__msg__Col
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -105,8 +99,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__msg__Col
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -122,8 +114,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__msg__Col
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -139,8 +129,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__msg__Col
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -156,40 +144,38 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__msg__Col
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_members = {
   "audition_msgs__msg",  // message namespace
   "CollectionStatus",  // message name
   7,  // number of fields
   sizeof(audition_msgs__msg__CollectionStatus),
-  audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_member_array,  // message members
-  audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_fini_function  // function to terminate message instance (will not free memory)
+  CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_member_array,  // message members
+  CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_type_support_handle = {
+static rosidl_message_type_support_t CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_type_support_handle = {
   0,
-  &audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_members,
+  &CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, msg, CollectionStatus)() {
-  audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_member_array[0].members_ =
+  CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
-  if (!audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_type_support_handle.typesupport_identifier =
+  if (!CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_type_support_handle.typesupport_identifier) {
+    CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__msg__CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_type_support_handle;
+  return &CollectionStatus__rosidl_typesupport_introspection_c__CollectionStatus_message_type_support_handle;
 }
 #ifdef __cplusplus
 }

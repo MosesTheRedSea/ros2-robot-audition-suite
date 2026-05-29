@@ -21,7 +21,7 @@ extern "C"
 // Member 'waypoint_label'
 #include "rosidl_runtime_c/string.h"
 
-/// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
+// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
 typedef struct audition_msgs__action__CollectAtWaypoint_Goal
 {
   int32_t waypoint_id;
@@ -49,7 +49,7 @@ typedef struct audition_msgs__action__CollectAtWaypoint_Goal__Sequence
 // already included above
 // #include "rosidl_runtime_c/string.h"
 
-/// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
+// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
 typedef struct audition_msgs__action__CollectAtWaypoint_Result
 {
   bool success;
@@ -75,7 +75,7 @@ typedef struct audition_msgs__action__CollectAtWaypoint_Result__Sequence
 // already included above
 // #include "rosidl_runtime_c/string.h"
 
-/// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
+// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
 typedef struct audition_msgs__action__CollectAtWaypoint_Feedback
 {
   rosidl_runtime_c__String current_state;
@@ -101,7 +101,7 @@ typedef struct audition_msgs__action__CollectAtWaypoint_Feedback__Sequence
 // Member 'goal'
 #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 
-/// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
+// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
 typedef struct audition_msgs__action__CollectAtWaypoint_SendGoal_Request
 {
   unique_identifier_msgs__msg__UUID goal_id;
@@ -125,7 +125,7 @@ typedef struct audition_msgs__action__CollectAtWaypoint_SendGoal_Request__Sequen
 // Member 'stamp'
 #include "builtin_interfaces/msg/detail/time__struct.h"
 
-/// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
+// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
 typedef struct audition_msgs__action__CollectAtWaypoint_SendGoal_Response
 {
   bool accepted;
@@ -150,7 +150,7 @@ typedef struct audition_msgs__action__CollectAtWaypoint_SendGoal_Response__Seque
 // already included above
 // #include "unique_identifier_msgs/msg/detail/uuid__struct.h"
 
-/// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
+// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
 typedef struct audition_msgs__action__CollectAtWaypoint_GetResult_Request
 {
   unique_identifier_msgs__msg__UUID goal_id;
@@ -174,7 +174,7 @@ typedef struct audition_msgs__action__CollectAtWaypoint_GetResult_Request__Seque
 // already included above
 // #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 
-/// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
+// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
 typedef struct audition_msgs__action__CollectAtWaypoint_GetResult_Response
 {
   int8_t status;
@@ -202,7 +202,7 @@ typedef struct audition_msgs__action__CollectAtWaypoint_GetResult_Response__Sequ
 // already included above
 // #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 
-/// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
+// Struct defined in action/CollectAtWaypoint in the package audition_msgs.
 typedef struct audition_msgs__action__CollectAtWaypoint_FeedbackMessage
 {
   unique_identifier_msgs__msg__UUID goal_id;

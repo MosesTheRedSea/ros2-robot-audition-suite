@@ -5,10 +5,6 @@
 
 # Import statements for member types
 
-import builtins  # noqa: E402, I100
-
-import math  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -136,7 +132,7 @@ class CollectAtWaypoint_Goal(metaclass=Metaclass_CollectAtWaypoint_Goal):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def waypoint_id(self):
         """Message field 'waypoint_id'."""
         return self._waypoint_id
@@ -151,7 +147,7 @@ class CollectAtWaypoint_Goal(metaclass=Metaclass_CollectAtWaypoint_Goal):
                 "The 'waypoint_id' field must be an integer in [-2147483648, 2147483647]"
         self._waypoint_id = value
 
-    @builtins.property
+    @property
     def waypoint_label(self):
         """Message field 'waypoint_label'."""
         return self._waypoint_label
@@ -164,7 +160,7 @@ class CollectAtWaypoint_Goal(metaclass=Metaclass_CollectAtWaypoint_Goal):
                 "The 'waypoint_label' field must be of type 'str'"
         self._waypoint_label = value
 
-    @builtins.property
+    @property
     def x(self):
         """Message field 'x'."""
         return self._x
@@ -175,11 +171,9 @@ class CollectAtWaypoint_Goal(metaclass=Metaclass_CollectAtWaypoint_Goal):
             assert \
                 isinstance(value, float), \
                 "The 'x' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'x' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._x = value
 
-    @builtins.property
+    @property
     def y(self):
         """Message field 'y'."""
         return self._y
@@ -190,11 +184,9 @@ class CollectAtWaypoint_Goal(metaclass=Metaclass_CollectAtWaypoint_Goal):
             assert \
                 isinstance(value, float), \
                 "The 'y' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'y' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._y = value
 
-    @builtins.property
+    @property
     def yaw(self):
         """Message field 'yaw'."""
         return self._yaw
@@ -205,15 +197,10 @@ class CollectAtWaypoint_Goal(metaclass=Metaclass_CollectAtWaypoint_Goal):
             assert \
                 isinstance(value, float), \
                 "The 'yaw' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'yaw' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._yaw = value
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -331,7 +318,7 @@ class CollectAtWaypoint_Result(metaclass=Metaclass_CollectAtWaypoint_Result):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def success(self):
         """Message field 'success'."""
         return self._success
@@ -344,7 +331,7 @@ class CollectAtWaypoint_Result(metaclass=Metaclass_CollectAtWaypoint_Result):
                 "The 'success' field must be of type 'bool'"
         self._success = value
 
-    @builtins.property
+    @property
     def message(self):
         """Message field 'message'."""
         return self._message
@@ -357,7 +344,7 @@ class CollectAtWaypoint_Result(metaclass=Metaclass_CollectAtWaypoint_Result):
                 "The 'message' field must be of type 'str'"
         self._message = value
 
-    @builtins.property
+    @property
     def bag_count(self):
         """Message field 'bag_count'."""
         return self._bag_count
@@ -374,12 +361,6 @@ class CollectAtWaypoint_Result(metaclass=Metaclass_CollectAtWaypoint_Result):
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
-
-# already imported above
-# import math
 
 # already imported above
 # import rosidl_parser.definition
@@ -491,7 +472,7 @@ class CollectAtWaypoint_Feedback(metaclass=Metaclass_CollectAtWaypoint_Feedback)
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def current_state(self):
         """Message field 'current_state'."""
         return self._current_state
@@ -504,7 +485,7 @@ class CollectAtWaypoint_Feedback(metaclass=Metaclass_CollectAtWaypoint_Feedback)
                 "The 'current_state' field must be of type 'str'"
         self._current_state = value
 
-    @builtins.property
+    @property
     def progress(self):
         """Message field 'progress'."""
         return self._progress
@@ -515,15 +496,10 @@ class CollectAtWaypoint_Feedback(metaclass=Metaclass_CollectAtWaypoint_Feedback)
             assert \
                 isinstance(value, float), \
                 "The 'progress' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'progress' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._progress = value
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -645,7 +621,7 @@ class CollectAtWaypoint_SendGoal_Request(metaclass=Metaclass_CollectAtWaypoint_S
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def goal_id(self):
         """Message field 'goal_id'."""
         return self._goal_id
@@ -659,7 +635,7 @@ class CollectAtWaypoint_SendGoal_Request(metaclass=Metaclass_CollectAtWaypoint_S
                 "The 'goal_id' field must be a sub message of type 'UUID'"
         self._goal_id = value
 
-    @builtins.property
+    @property
     def goal(self):
         """Message field 'goal'."""
         return self._goal
@@ -675,9 +651,6 @@ class CollectAtWaypoint_SendGoal_Request(metaclass=Metaclass_CollectAtWaypoint_S
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -794,7 +767,7 @@ class CollectAtWaypoint_SendGoal_Response(metaclass=Metaclass_CollectAtWaypoint_
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def accepted(self):
         """Message field 'accepted'."""
         return self._accepted
@@ -807,7 +780,7 @@ class CollectAtWaypoint_SendGoal_Response(metaclass=Metaclass_CollectAtWaypoint_
                 "The 'accepted' field must be of type 'bool'"
         self._accepted = value
 
-    @builtins.property
+    @property
     def stamp(self):
         """Message field 'stamp'."""
         return self._stamp
@@ -859,9 +832,6 @@ class CollectAtWaypoint_SendGoal(metaclass=Metaclass_CollectAtWaypoint_SendGoal)
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -972,7 +942,7 @@ class CollectAtWaypoint_GetResult_Request(metaclass=Metaclass_CollectAtWaypoint_
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def goal_id(self):
         """Message field 'goal_id'."""
         return self._goal_id
@@ -988,9 +958,6 @@ class CollectAtWaypoint_GetResult_Request(metaclass=Metaclass_CollectAtWaypoint_
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -1107,7 +1074,7 @@ class CollectAtWaypoint_GetResult_Response(metaclass=Metaclass_CollectAtWaypoint
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def status(self):
         """Message field 'status'."""
         return self._status
@@ -1122,7 +1089,7 @@ class CollectAtWaypoint_GetResult_Response(metaclass=Metaclass_CollectAtWaypoint
                 "The 'status' field must be an integer in [-128, 127]"
         self._status = value
 
-    @builtins.property
+    @property
     def result(self):
         """Message field 'result'."""
         return self._result
@@ -1174,9 +1141,6 @@ class CollectAtWaypoint_GetResult(metaclass=Metaclass_CollectAtWaypoint_GetResul
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -1298,7 +1262,7 @@ class CollectAtWaypoint_FeedbackMessage(metaclass=Metaclass_CollectAtWaypoint_Fe
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def goal_id(self):
         """Message field 'goal_id'."""
         return self._goal_id
@@ -1312,7 +1276,7 @@ class CollectAtWaypoint_FeedbackMessage(metaclass=Metaclass_CollectAtWaypoint_Fe
                 "The 'goal_id' field must be a sub message of type 'UUID'"
         self._goal_id = value
 
-    @builtins.property
+    @property
     def feedback(self):
         """Message field 'feedback'."""
         return self._feedback

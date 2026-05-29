@@ -21,7 +21,7 @@ extern "C"
 // Member 'operator_note'
 #include "rosidl_runtime_c/string.h"
 
-/// Struct defined in srv/ProceedToNext in the package audition_msgs.
+// Struct defined in srv/ProceedToNext in the package audition_msgs.
 typedef struct audition_msgs__srv__ProceedToNext_Request
 {
   bool proceed;
@@ -46,7 +46,7 @@ typedef struct audition_msgs__srv__ProceedToNext_Request__Sequence
 // already included above
 // #include "rosidl_runtime_c/string.h"
 
-/// Struct defined in srv/ProceedToNext in the package audition_msgs.
+// Struct defined in srv/ProceedToNext in the package audition_msgs.
 typedef struct audition_msgs__srv__ProceedToNext_Response
 {
   bool accepted;

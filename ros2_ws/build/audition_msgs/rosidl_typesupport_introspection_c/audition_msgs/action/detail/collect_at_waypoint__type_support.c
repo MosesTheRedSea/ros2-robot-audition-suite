@@ -21,7 +21,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_init_function(
+void CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -30,12 +30,12 @@ void audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspec
   audition_msgs__action__CollectAtWaypoint_Goal__init(message_memory);
 }
 
-void audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_fini_function(void * message_memory)
+void CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_fini_function(void * message_memory)
 {
   audition_msgs__action__CollectAtWaypoint_Goal__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_member_array[5] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_member_array[5] = {
   {
     "waypoint_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -49,8 +49,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -66,8 +64,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -83,8 +79,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -100,8 +94,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -117,38 +109,36 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_members = {
   "audition_msgs__action",  // message namespace
   "CollectAtWaypoint_Goal",  // message name
   5,  // number of fields
   sizeof(audition_msgs__action__CollectAtWaypoint_Goal),
-  audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_member_array,  // message members
-  audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_fini_function  // function to terminate message instance (will not free memory)
+  CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_member_array,  // message members
+  CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_type_support_handle = {
+static rosidl_message_type_support_t CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_type_support_handle = {
   0,
-  &audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_members,
+  &CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_Goal)() {
-  if (!audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_type_support_handle.typesupport_identifier =
+  if (!CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_type_support_handle.typesupport_identifier) {
+    CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__action__CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_type_support_handle;
+  return &CollectAtWaypoint_Goal__rosidl_typesupport_introspection_c__CollectAtWaypoint_Goal_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -182,7 +172,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_init_function(
+void CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -191,12 +181,12 @@ void audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introsp
   audition_msgs__action__CollectAtWaypoint_Result__init(message_memory);
 }
 
-void audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_fini_function(void * message_memory)
+void CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_fini_function(void * message_memory)
 {
   audition_msgs__action__CollectAtWaypoint_Result__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_member_array[3] = {
   {
     "success",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -210,8 +200,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -227,8 +215,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -244,38 +230,36 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_members = {
   "audition_msgs__action",  // message namespace
   "CollectAtWaypoint_Result",  // message name
   3,  // number of fields
   sizeof(audition_msgs__action__CollectAtWaypoint_Result),
-  audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_member_array,  // message members
-  audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_fini_function  // function to terminate message instance (will not free memory)
+  CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_member_array,  // message members
+  CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_type_support_handle = {
+static rosidl_message_type_support_t CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_type_support_handle = {
   0,
-  &audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_members,
+  &CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_Result)() {
-  if (!audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_type_support_handle.typesupport_identifier =
+  if (!CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_type_support_handle.typesupport_identifier) {
+    CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__action__CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_type_support_handle;
+  return &CollectAtWaypoint_Result__rosidl_typesupport_introspection_c__CollectAtWaypoint_Result_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -309,7 +293,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_init_function(
+void CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -318,12 +302,12 @@ void audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_intro
   audition_msgs__action__CollectAtWaypoint_Feedback__init(message_memory);
 }
 
-void audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_fini_function(void * message_memory)
+void CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_fini_function(void * message_memory)
 {
   audition_msgs__action__CollectAtWaypoint_Feedback__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_member_array[2] = {
   {
     "current_state",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -337,8 +321,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -354,38 +336,36 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_members = {
   "audition_msgs__action",  // message namespace
   "CollectAtWaypoint_Feedback",  // message name
   2,  // number of fields
   sizeof(audition_msgs__action__CollectAtWaypoint_Feedback),
-  audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_member_array,  // message members
-  audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_fini_function  // function to terminate message instance (will not free memory)
+  CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_member_array,  // message members
+  CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_type_support_handle = {
+static rosidl_message_type_support_t CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_type_support_handle = {
   0,
-  &audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_members,
+  &CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_Feedback)() {
-  if (!audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_type_support_handle.typesupport_identifier =
+  if (!CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_type_support_handle.typesupport_identifier) {
+    CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__action__CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_type_support_handle;
+  return &CollectAtWaypoint_Feedback__rosidl_typesupport_introspection_c__CollectAtWaypoint_Feedback_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -425,7 +405,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_init_function(
+void CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -434,12 +414,12 @@ void audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesuppo
   audition_msgs__action__CollectAtWaypoint_SendGoal_Request__init(message_memory);
 }
 
-void audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_fini_function(void * message_memory)
+void CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_fini_function(void * message_memory)
 {
   audition_msgs__action__CollectAtWaypoint_SendGoal_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_member_array[2] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -453,8 +433,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -470,42 +448,40 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_members = {
   "audition_msgs__action",  // message namespace
   "CollectAtWaypoint_SendGoal_Request",  // message name
   2,  // number of fields
   sizeof(audition_msgs__action__CollectAtWaypoint_SendGoal_Request),
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_member_array,  // message members
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_fini_function  // function to terminate message instance (will not free memory)
+  CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_member_array,  // message members
+  CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_type_support_handle = {
+static rosidl_message_type_support_t CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_type_support_handle = {
   0,
-  &audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_members,
+  &CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_SendGoal_Request)() {
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_member_array[0].members_ =
+  CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_member_array[1].members_ =
+  CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_Goal)();
-  if (!audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_type_support_handle.typesupport_identifier =
+  if (!CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_type_support_handle.typesupport_identifier) {
+    CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__action__CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_type_support_handle;
+  return &CollectAtWaypoint_SendGoal_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -540,7 +516,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_init_function(
+void CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -549,12 +525,12 @@ void audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupp
   audition_msgs__action__CollectAtWaypoint_SendGoal_Response__init(message_memory);
 }
 
-void audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_fini_function(void * message_memory)
+void CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_fini_function(void * message_memory)
 {
   audition_msgs__action__CollectAtWaypoint_SendGoal_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_member_array[2] = {
   {
     "accepted",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -568,8 +544,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -585,40 +559,38 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_members = {
   "audition_msgs__action",  // message namespace
   "CollectAtWaypoint_SendGoal_Response",  // message name
   2,  // number of fields
   sizeof(audition_msgs__action__CollectAtWaypoint_SendGoal_Response),
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_member_array,  // message members
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_fini_function  // function to terminate message instance (will not free memory)
+  CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_member_array,  // message members
+  CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_type_support_handle = {
+static rosidl_message_type_support_t CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_type_support_handle = {
   0,
-  &audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_members,
+  &CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_SendGoal_Response)() {
-  audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_member_array[1].members_ =
+  CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, builtin_interfaces, msg, Time)();
-  if (!audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_type_support_handle.typesupport_identifier =
+  if (!CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_type_support_handle.typesupport_identifier) {
+    CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__action__CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_type_support_handle;
+  return &CollectAtWaypoint_SendGoal_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_SendGoal_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -712,7 +684,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_init_function(
+void CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -721,12 +693,12 @@ void audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupp
   audition_msgs__action__CollectAtWaypoint_GetResult_Request__init(message_memory);
 }
 
-void audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_fini_function(void * message_memory)
+void CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_fini_function(void * message_memory)
 {
   audition_msgs__action__CollectAtWaypoint_GetResult_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_member_array[1] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -740,40 +712,38 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_members = {
   "audition_msgs__action",  // message namespace
   "CollectAtWaypoint_GetResult_Request",  // message name
   1,  // number of fields
   sizeof(audition_msgs__action__CollectAtWaypoint_GetResult_Request),
-  audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_member_array,  // message members
-  audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_fini_function  // function to terminate message instance (will not free memory)
+  CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_member_array,  // message members
+  CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_type_support_handle = {
+static rosidl_message_type_support_t CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_type_support_handle = {
   0,
-  &audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_members,
+  &CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_GetResult_Request)() {
-  audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_member_array[0].members_ =
+  CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  if (!audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_type_support_handle.typesupport_identifier =
+  if (!CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_type_support_handle.typesupport_identifier) {
+    CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__action__CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_type_support_handle;
+  return &CollectAtWaypoint_GetResult_Request__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -810,7 +780,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_init_function(
+void CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -819,12 +789,12 @@ void audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesup
   audition_msgs__action__CollectAtWaypoint_GetResult_Response__init(message_memory);
 }
 
-void audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_fini_function(void * message_memory)
+void CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_fini_function(void * message_memory)
 {
   audition_msgs__action__CollectAtWaypoint_GetResult_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_member_array[2] = {
   {
     "status",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
@@ -838,8 +808,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -855,40 +823,38 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_members = {
   "audition_msgs__action",  // message namespace
   "CollectAtWaypoint_GetResult_Response",  // message name
   2,  // number of fields
   sizeof(audition_msgs__action__CollectAtWaypoint_GetResult_Response),
-  audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_member_array,  // message members
-  audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_fini_function  // function to terminate message instance (will not free memory)
+  CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_member_array,  // message members
+  CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_type_support_handle = {
+static rosidl_message_type_support_t CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_type_support_handle = {
   0,
-  &audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_members,
+  &CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_GetResult_Response)() {
-  audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_member_array[1].members_ =
+  CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_Result)();
-  if (!audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_type_support_handle.typesupport_identifier =
+  if (!CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_type_support_handle.typesupport_identifier) {
+    CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__action__CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_type_support_handle;
+  return &CollectAtWaypoint_GetResult_Response__rosidl_typesupport_introspection_c__CollectAtWaypoint_GetResult_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -990,7 +956,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_init_function(
+void CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -999,12 +965,12 @@ void audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesuppor
   audition_msgs__action__CollectAtWaypoint_FeedbackMessage__init(message_memory);
 }
 
-void audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_fini_function(void * message_memory)
+void CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_fini_function(void * message_memory)
 {
   audition_msgs__action__CollectAtWaypoint_FeedbackMessage__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_member_array[2] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -1018,8 +984,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -1035,42 +999,40 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__action__
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_members = {
   "audition_msgs__action",  // message namespace
   "CollectAtWaypoint_FeedbackMessage",  // message name
   2,  // number of fields
   sizeof(audition_msgs__action__CollectAtWaypoint_FeedbackMessage),
-  audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_member_array,  // message members
-  audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_fini_function  // function to terminate message instance (will not free memory)
+  CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_member_array,  // message members
+  CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_init_function,  // function to initialize message memory (memory has to be allocated)
+  CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_type_support_handle = {
+static rosidl_message_type_support_t CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_type_support_handle = {
   0,
-  &audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_members,
+  &CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_FeedbackMessage)() {
-  audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_member_array[0].members_ =
+  CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_member_array[1].members_ =
+  CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, action, CollectAtWaypoint_Feedback)();
-  if (!audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_type_support_handle.typesupport_identifier =
+  if (!CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_type_support_handle.typesupport_identifier) {
+    CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__action__CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_type_support_handle;
+  return &CollectAtWaypoint_FeedbackMessage__rosidl_typesupport_introspection_c__CollectAtWaypoint_FeedbackMessage_message_type_support_handle;
 }
 #ifdef __cplusplus
 }

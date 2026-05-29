@@ -5,8 +5,6 @@
 
 # Import statements for member types
 
-import builtins  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -110,7 +108,7 @@ class AbortSession_Request(metaclass=Metaclass_AbortSession_Request):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def reason(self):
         """Message field 'reason'."""
         return self._reason
@@ -125,9 +123,6 @@ class AbortSession_Request(metaclass=Metaclass_AbortSession_Request):
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -239,7 +234,7 @@ class AbortSession_Response(metaclass=Metaclass_AbortSession_Response):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def accepted(self):
         """Message field 'accepted'."""
         return self._accepted
@@ -252,7 +247,7 @@ class AbortSession_Response(metaclass=Metaclass_AbortSession_Response):
                 "The 'accepted' field must be of type 'bool'"
         self._accepted = value
 
-    @builtins.property
+    @property
     def message(self):
         """Message field 'message'."""
         return self._message

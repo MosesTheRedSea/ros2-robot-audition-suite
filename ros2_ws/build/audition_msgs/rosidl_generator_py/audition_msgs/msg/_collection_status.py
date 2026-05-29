@@ -5,8 +5,6 @@
 
 # Import statements for member types
 
-import builtins  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -151,7 +149,7 @@ class CollectionStatus(metaclass=Metaclass_CollectionStatus):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def header(self):
         """Message field 'header'."""
         return self._header
@@ -165,7 +163,7 @@ class CollectionStatus(metaclass=Metaclass_CollectionStatus):
                 "The 'header' field must be a sub message of type 'Header'"
         self._header = value
 
-    @builtins.property
+    @property
     def current_waypoint_id(self):
         """Message field 'current_waypoint_id'."""
         return self._current_waypoint_id
@@ -180,7 +178,7 @@ class CollectionStatus(metaclass=Metaclass_CollectionStatus):
                 "The 'current_waypoint_id' field must be an integer in [-2147483648, 2147483647]"
         self._current_waypoint_id = value
 
-    @builtins.property
+    @property
     def current_waypoint_label(self):
         """Message field 'current_waypoint_label'."""
         return self._current_waypoint_label
@@ -193,7 +191,7 @@ class CollectionStatus(metaclass=Metaclass_CollectionStatus):
                 "The 'current_waypoint_label' field must be of type 'str'"
         self._current_waypoint_label = value
 
-    @builtins.property
+    @property
     def state(self):
         """Message field 'state'."""
         return self._state
@@ -206,7 +204,7 @@ class CollectionStatus(metaclass=Metaclass_CollectionStatus):
                 "The 'state' field must be of type 'str'"
         self._state = value
 
-    @builtins.property
+    @property
     def recording(self):
         """Message field 'recording'."""
         return self._recording
@@ -219,7 +217,7 @@ class CollectionStatus(metaclass=Metaclass_CollectionStatus):
                 "The 'recording' field must be of type 'bool'"
         self._recording = value
 
-    @builtins.property
+    @property
     def total_waypoints(self):
         """Message field 'total_waypoints'."""
         return self._total_waypoints
@@ -234,7 +232,7 @@ class CollectionStatus(metaclass=Metaclass_CollectionStatus):
                 "The 'total_waypoints' field must be an integer in [-2147483648, 2147483647]"
         self._total_waypoints = value
 
-    @builtins.property
+    @property
     def completed_waypoints(self):
         """Message field 'completed_waypoints'."""
         return self._completed_waypoints

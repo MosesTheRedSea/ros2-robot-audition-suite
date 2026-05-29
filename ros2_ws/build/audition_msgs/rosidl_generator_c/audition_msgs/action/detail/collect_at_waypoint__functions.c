@@ -248,27 +248,22 @@ audition_msgs__action__CollectAtWaypoint_Goal__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(audition_msgs__action__CollectAtWaypoint_Goal);
-    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     audition_msgs__action__CollectAtWaypoint_Goal * data =
-      (audition_msgs__action__CollectAtWaypoint_Goal *)allocator.reallocate(
-      output->data, allocation_size, allocator.state);
+      (audition_msgs__action__CollectAtWaypoint_Goal *)realloc(output->data, allocation_size);
     if (!data) {
       return false;
     }
-    // If reallocation succeeded, memory may or may not have been moved
-    // to fulfill the allocation request, invalidating output->data.
-    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!audition_msgs__action__CollectAtWaypoint_Goal__init(&output->data[i])) {
-        // If initialization of any new item fails, roll back
-        // all previously initialized items. Existing items
-        // in output are to be left unmodified.
+      if (!audition_msgs__action__CollectAtWaypoint_Goal__init(&data[i])) {
+        /* free currently allocated and return false */
         for (; i-- > output->capacity; ) {
-          audition_msgs__action__CollectAtWaypoint_Goal__fini(&output->data[i]);
+          audition_msgs__action__CollectAtWaypoint_Goal__fini(&data[i]);
         }
+        free(data);
         return false;
       }
     }
+    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -505,27 +500,22 @@ audition_msgs__action__CollectAtWaypoint_Result__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(audition_msgs__action__CollectAtWaypoint_Result);
-    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     audition_msgs__action__CollectAtWaypoint_Result * data =
-      (audition_msgs__action__CollectAtWaypoint_Result *)allocator.reallocate(
-      output->data, allocation_size, allocator.state);
+      (audition_msgs__action__CollectAtWaypoint_Result *)realloc(output->data, allocation_size);
     if (!data) {
       return false;
     }
-    // If reallocation succeeded, memory may or may not have been moved
-    // to fulfill the allocation request, invalidating output->data.
-    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!audition_msgs__action__CollectAtWaypoint_Result__init(&output->data[i])) {
-        // If initialization of any new item fails, roll back
-        // all previously initialized items. Existing items
-        // in output are to be left unmodified.
+      if (!audition_msgs__action__CollectAtWaypoint_Result__init(&data[i])) {
+        /* free currently allocated and return false */
         for (; i-- > output->capacity; ) {
-          audition_msgs__action__CollectAtWaypoint_Result__fini(&output->data[i]);
+          audition_msgs__action__CollectAtWaypoint_Result__fini(&data[i]);
         }
+        free(data);
         return false;
       }
     }
+    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -754,27 +744,22 @@ audition_msgs__action__CollectAtWaypoint_Feedback__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(audition_msgs__action__CollectAtWaypoint_Feedback);
-    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     audition_msgs__action__CollectAtWaypoint_Feedback * data =
-      (audition_msgs__action__CollectAtWaypoint_Feedback *)allocator.reallocate(
-      output->data, allocation_size, allocator.state);
+      (audition_msgs__action__CollectAtWaypoint_Feedback *)realloc(output->data, allocation_size);
     if (!data) {
       return false;
     }
-    // If reallocation succeeded, memory may or may not have been moved
-    // to fulfill the allocation request, invalidating output->data.
-    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!audition_msgs__action__CollectAtWaypoint_Feedback__init(&output->data[i])) {
-        // If initialization of any new item fails, roll back
-        // all previously initialized items. Existing items
-        // in output are to be left unmodified.
+      if (!audition_msgs__action__CollectAtWaypoint_Feedback__init(&data[i])) {
+        /* free currently allocated and return false */
         for (; i-- > output->capacity; ) {
-          audition_msgs__action__CollectAtWaypoint_Feedback__fini(&output->data[i]);
+          audition_msgs__action__CollectAtWaypoint_Feedback__fini(&data[i]);
         }
+        free(data);
         return false;
       }
     }
+    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -1016,27 +1001,22 @@ audition_msgs__action__CollectAtWaypoint_SendGoal_Request__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(audition_msgs__action__CollectAtWaypoint_SendGoal_Request);
-    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     audition_msgs__action__CollectAtWaypoint_SendGoal_Request * data =
-      (audition_msgs__action__CollectAtWaypoint_SendGoal_Request *)allocator.reallocate(
-      output->data, allocation_size, allocator.state);
+      (audition_msgs__action__CollectAtWaypoint_SendGoal_Request *)realloc(output->data, allocation_size);
     if (!data) {
       return false;
     }
-    // If reallocation succeeded, memory may or may not have been moved
-    // to fulfill the allocation request, invalidating output->data.
-    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!audition_msgs__action__CollectAtWaypoint_SendGoal_Request__init(&output->data[i])) {
-        // If initialization of any new item fails, roll back
-        // all previously initialized items. Existing items
-        // in output are to be left unmodified.
+      if (!audition_msgs__action__CollectAtWaypoint_SendGoal_Request__init(&data[i])) {
+        /* free currently allocated and return false */
         for (; i-- > output->capacity; ) {
-          audition_msgs__action__CollectAtWaypoint_SendGoal_Request__fini(&output->data[i]);
+          audition_msgs__action__CollectAtWaypoint_SendGoal_Request__fini(&data[i]);
         }
+        free(data);
         return false;
       }
     }
+    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -1264,27 +1244,22 @@ audition_msgs__action__CollectAtWaypoint_SendGoal_Response__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(audition_msgs__action__CollectAtWaypoint_SendGoal_Response);
-    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     audition_msgs__action__CollectAtWaypoint_SendGoal_Response * data =
-      (audition_msgs__action__CollectAtWaypoint_SendGoal_Response *)allocator.reallocate(
-      output->data, allocation_size, allocator.state);
+      (audition_msgs__action__CollectAtWaypoint_SendGoal_Response *)realloc(output->data, allocation_size);
     if (!data) {
       return false;
     }
-    // If reallocation succeeded, memory may or may not have been moved
-    // to fulfill the allocation request, invalidating output->data.
-    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!audition_msgs__action__CollectAtWaypoint_SendGoal_Response__init(&output->data[i])) {
-        // If initialization of any new item fails, roll back
-        // all previously initialized items. Existing items
-        // in output are to be left unmodified.
+      if (!audition_msgs__action__CollectAtWaypoint_SendGoal_Response__init(&data[i])) {
+        /* free currently allocated and return false */
         for (; i-- > output->capacity; ) {
-          audition_msgs__action__CollectAtWaypoint_SendGoal_Response__fini(&output->data[i]);
+          audition_msgs__action__CollectAtWaypoint_SendGoal_Response__fini(&data[i]);
         }
+        free(data);
         return false;
       }
     }
+    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -1505,27 +1480,22 @@ audition_msgs__action__CollectAtWaypoint_GetResult_Request__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(audition_msgs__action__CollectAtWaypoint_GetResult_Request);
-    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     audition_msgs__action__CollectAtWaypoint_GetResult_Request * data =
-      (audition_msgs__action__CollectAtWaypoint_GetResult_Request *)allocator.reallocate(
-      output->data, allocation_size, allocator.state);
+      (audition_msgs__action__CollectAtWaypoint_GetResult_Request *)realloc(output->data, allocation_size);
     if (!data) {
       return false;
     }
-    // If reallocation succeeded, memory may or may not have been moved
-    // to fulfill the allocation request, invalidating output->data.
-    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!audition_msgs__action__CollectAtWaypoint_GetResult_Request__init(&output->data[i])) {
-        // If initialization of any new item fails, roll back
-        // all previously initialized items. Existing items
-        // in output are to be left unmodified.
+      if (!audition_msgs__action__CollectAtWaypoint_GetResult_Request__init(&data[i])) {
+        /* free currently allocated and return false */
         for (; i-- > output->capacity; ) {
-          audition_msgs__action__CollectAtWaypoint_GetResult_Request__fini(&output->data[i]);
+          audition_msgs__action__CollectAtWaypoint_GetResult_Request__fini(&data[i]);
         }
+        free(data);
         return false;
       }
     }
+    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -1754,27 +1724,22 @@ audition_msgs__action__CollectAtWaypoint_GetResult_Response__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(audition_msgs__action__CollectAtWaypoint_GetResult_Response);
-    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     audition_msgs__action__CollectAtWaypoint_GetResult_Response * data =
-      (audition_msgs__action__CollectAtWaypoint_GetResult_Response *)allocator.reallocate(
-      output->data, allocation_size, allocator.state);
+      (audition_msgs__action__CollectAtWaypoint_GetResult_Response *)realloc(output->data, allocation_size);
     if (!data) {
       return false;
     }
-    // If reallocation succeeded, memory may or may not have been moved
-    // to fulfill the allocation request, invalidating output->data.
-    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!audition_msgs__action__CollectAtWaypoint_GetResult_Response__init(&output->data[i])) {
-        // If initialization of any new item fails, roll back
-        // all previously initialized items. Existing items
-        // in output are to be left unmodified.
+      if (!audition_msgs__action__CollectAtWaypoint_GetResult_Response__init(&data[i])) {
+        /* free currently allocated and return false */
         for (; i-- > output->capacity; ) {
-          audition_msgs__action__CollectAtWaypoint_GetResult_Response__fini(&output->data[i]);
+          audition_msgs__action__CollectAtWaypoint_GetResult_Response__fini(&data[i]);
         }
+        free(data);
         return false;
       }
     }
+    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -2017,27 +1982,22 @@ audition_msgs__action__CollectAtWaypoint_FeedbackMessage__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(audition_msgs__action__CollectAtWaypoint_FeedbackMessage);
-    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     audition_msgs__action__CollectAtWaypoint_FeedbackMessage * data =
-      (audition_msgs__action__CollectAtWaypoint_FeedbackMessage *)allocator.reallocate(
-      output->data, allocation_size, allocator.state);
+      (audition_msgs__action__CollectAtWaypoint_FeedbackMessage *)realloc(output->data, allocation_size);
     if (!data) {
       return false;
     }
-    // If reallocation succeeded, memory may or may not have been moved
-    // to fulfill the allocation request, invalidating output->data.
-    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!audition_msgs__action__CollectAtWaypoint_FeedbackMessage__init(&output->data[i])) {
-        // If initialization of any new item fails, roll back
-        // all previously initialized items. Existing items
-        // in output are to be left unmodified.
+      if (!audition_msgs__action__CollectAtWaypoint_FeedbackMessage__init(&data[i])) {
+        /* free currently allocated and return false */
         for (; i-- > output->capacity; ) {
-          audition_msgs__action__CollectAtWaypoint_FeedbackMessage__fini(&output->data[i]);
+          audition_msgs__action__CollectAtWaypoint_FeedbackMessage__fini(&data[i]);
         }
+        free(data);
         return false;
       }
     }
+    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;

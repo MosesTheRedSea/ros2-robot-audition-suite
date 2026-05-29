@@ -5,14 +5,13 @@
 #ifndef AUDITION_MSGS__ACTION__DETAIL__COLLECT_AT_WAYPOINT__STRUCT_HPP_
 #define AUDITION_MSGS__ACTION__DETAIL__COLLECT_AT_WAYPOINT__STRUCT_HPP_
 
+#include <rosidl_runtime_cpp/bounded_vector.hpp>
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <array>
 #include <memory>
 #include <string>
 #include <vector>
-
-#include "rosidl_runtime_cpp/bounded_vector.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 #ifndef _WIN32
@@ -65,7 +64,7 @@ struct CollectAtWaypoint_Goal_
     int32_t;
   _waypoint_id_type waypoint_id;
   using _waypoint_label_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _waypoint_label_type waypoint_label;
   using _x_type =
     double;
@@ -85,7 +84,7 @@ struct CollectAtWaypoint_Goal_
     return *this;
   }
   Type & set__waypoint_label(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->waypoint_label = _arg;
     return *this;
@@ -231,7 +230,7 @@ struct CollectAtWaypoint_Result_
     bool;
   _success_type success;
   using _message_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _message_type message;
   using _bag_count_type =
     int32_t;
@@ -245,7 +244,7 @@ struct CollectAtWaypoint_Result_
     return *this;
   }
   Type & set__message(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->message = _arg;
     return *this;
@@ -368,7 +367,7 @@ struct CollectAtWaypoint_Feedback_
 
   // field types and members
   using _current_state_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _current_state_type current_state;
   using _progress_type =
     float;
@@ -376,7 +375,7 @@ struct CollectAtWaypoint_Feedback_
 
   // setters for named parameter idiom
   Type & set__current_state(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->current_state = _arg;
     return *this;

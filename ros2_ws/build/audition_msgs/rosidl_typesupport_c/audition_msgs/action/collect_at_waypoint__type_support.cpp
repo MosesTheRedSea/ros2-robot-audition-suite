@@ -4,8 +4,8 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
+#include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
-#include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -85,6 +85,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_Goal)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_Goal_message_type_support_handle;
@@ -99,9 +100,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -186,6 +187,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_Result)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_Result_message_type_support_handle;
@@ -200,9 +202,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -287,6 +289,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_Feedback)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_Feedback_message_type_support_handle;
@@ -301,9 +304,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -388,6 +391,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_SendGoal_Request)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_SendGoal_Request_message_type_support_handle;
@@ -402,9 +406,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -489,6 +493,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_SendGoal_Response)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_SendGoal_Response_message_type_support_handle;
@@ -502,7 +507,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // #include "cstddef"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/service_type_support_dispatch.h"
@@ -584,6 +589,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_service_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_SendGoal)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_SendGoal_service_type_support_handle;
@@ -598,9 +604,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -685,6 +691,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_GetResult_Request)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_GetResult_Request_message_type_support_handle;
@@ -699,9 +706,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -786,6 +793,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_GetResult_Response)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_GetResult_Response_message_type_support_handle;
@@ -800,7 +808,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -883,6 +891,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_service_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_GetResult)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_GetResult_service_type_support_handle;
@@ -897,9 +906,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, audition
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
+// #include "audition_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+// #include "audition_msgs/action/detail/collect_at_waypoint__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -984,6 +993,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint_FeedbackMessage)() {
   return &::audition_msgs::action::rosidl_typesupport_c::CollectAtWaypoint_FeedbackMessage_message_type_support_handle;
@@ -996,8 +1006,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, audition
 #include "action_msgs/msg/goal_status_array.h"
 #include "action_msgs/srv/cancel_goal.h"
 #include "audition_msgs/action/collect_at_waypoint.h"
-// already included above
-// #include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
+#include "audition_msgs/action/detail/collect_at_waypoint__type_support.h"
 
 static rosidl_action_type_support_t _audition_msgs__action__CollectAtWaypoint__typesupport_c;
 
@@ -1006,6 +1015,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_audition_msgs
 const rosidl_action_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__ACTION_SYMBOL_NAME(
   rosidl_typesupport_c, audition_msgs, action, CollectAtWaypoint)()

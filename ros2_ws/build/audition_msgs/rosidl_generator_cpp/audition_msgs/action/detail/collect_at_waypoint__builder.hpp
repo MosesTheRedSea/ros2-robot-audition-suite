@@ -5,11 +5,10 @@
 #ifndef AUDITION_MSGS__ACTION__DETAIL__COLLECT_AT_WAYPOINT__BUILDER_HPP_
 #define AUDITION_MSGS__ACTION__DETAIL__COLLECT_AT_WAYPOINT__BUILDER_HPP_
 
+#include "audition_msgs/action/detail/collect_at_waypoint__struct.hpp"
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
-
-#include "audition_msgs/action/detail/collect_at_waypoint__struct.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace audition_msgs

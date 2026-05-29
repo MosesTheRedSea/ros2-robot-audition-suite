@@ -5,14 +5,13 @@
 #ifndef AUDITION_MSGS__MSG__DETAIL__COLLECTION_STATUS__STRUCT_HPP_
 #define AUDITION_MSGS__MSG__DETAIL__COLLECTION_STATUS__STRUCT_HPP_
 
+#include <rosidl_runtime_cpp/bounded_vector.hpp>
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <array>
 #include <memory>
 #include <string>
 #include <vector>
-
-#include "rosidl_runtime_cpp/bounded_vector.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 // Include directives for member types
@@ -77,10 +76,10 @@ struct CollectionStatus_
     int32_t;
   _current_waypoint_id_type current_waypoint_id;
   using _current_waypoint_label_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _current_waypoint_label_type current_waypoint_label;
   using _state_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _state_type state;
   using _recording_type =
     bool;
@@ -106,13 +105,13 @@ struct CollectionStatus_
     return *this;
   }
   Type & set__current_waypoint_label(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->current_waypoint_label = _arg;
     return *this;
   }
   Type & set__state(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->state = _arg;
     return *this;

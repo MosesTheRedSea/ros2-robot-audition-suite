@@ -5,80 +5,13 @@
 #ifndef AUDITION_MSGS__SRV__DETAIL__ABORT_SESSION__TRAITS_HPP_
 #define AUDITION_MSGS__SRV__DETAIL__ABORT_SESSION__TRAITS_HPP_
 
-#include <stdint.h>
-
-#include <sstream>
-#include <string>
-#include <type_traits>
-
 #include "audition_msgs/srv/detail/abort_session__struct.hpp"
-#include "rosidl_runtime_cpp/traits.hpp"
-
-namespace audition_msgs
-{
-
-namespace srv
-{
-
-inline void to_flow_style_yaml(
-  const AbortSession_Request & msg,
-  std::ostream & out)
-{
-  out << "{";
-  // member: reason
-  {
-    out << "reason: ";
-    rosidl_generator_traits::value_to_yaml(msg.reason, out);
-  }
-  out << "}";
-}  // NOLINT(readability/fn_size)
-
-inline void to_block_style_yaml(
-  const AbortSession_Request & msg,
-  std::ostream & out, size_t indentation = 0)
-{
-  // member: reason
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "reason: ";
-    rosidl_generator_traits::value_to_yaml(msg.reason, out);
-    out << "\n";
-  }
-}  // NOLINT(readability/fn_size)
-
-inline std::string to_yaml(const AbortSession_Request & msg, bool use_flow_style = false)
-{
-  std::ostringstream out;
-  if (use_flow_style) {
-    to_flow_style_yaml(msg, out);
-  } else {
-    to_block_style_yaml(msg, out);
-  }
-  return out.str();
-}
-
-}  // namespace srv
-
-}  // namespace audition_msgs
+#include <rosidl_runtime_cpp/traits.hpp>
+#include <stdint.h>
+#include <type_traits>
 
 namespace rosidl_generator_traits
 {
-
-[[deprecated("use audition_msgs::srv::to_block_style_yaml() instead")]]
-inline void to_yaml(
-  const audition_msgs::srv::AbortSession_Request & msg,
-  std::ostream & out, size_t indentation = 0)
-{
-  audition_msgs::srv::to_block_style_yaml(msg, out, indentation);
-}
-
-[[deprecated("use audition_msgs::srv::to_yaml() instead")]]
-inline std::string to_yaml(const audition_msgs::srv::AbortSession_Request & msg)
-{
-  return audition_msgs::srv::to_yaml(msg);
-}
 
 template<>
 inline const char * data_type<audition_msgs::srv::AbortSession_Request>()
@@ -106,88 +39,8 @@ struct is_message<audition_msgs::srv::AbortSession_Request>
 
 }  // namespace rosidl_generator_traits
 
-namespace audition_msgs
-{
-
-namespace srv
-{
-
-inline void to_flow_style_yaml(
-  const AbortSession_Response & msg,
-  std::ostream & out)
-{
-  out << "{";
-  // member: accepted
-  {
-    out << "accepted: ";
-    rosidl_generator_traits::value_to_yaml(msg.accepted, out);
-    out << ", ";
-  }
-
-  // member: message
-  {
-    out << "message: ";
-    rosidl_generator_traits::value_to_yaml(msg.message, out);
-  }
-  out << "}";
-}  // NOLINT(readability/fn_size)
-
-inline void to_block_style_yaml(
-  const AbortSession_Response & msg,
-  std::ostream & out, size_t indentation = 0)
-{
-  // member: accepted
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "accepted: ";
-    rosidl_generator_traits::value_to_yaml(msg.accepted, out);
-    out << "\n";
-  }
-
-  // member: message
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "message: ";
-    rosidl_generator_traits::value_to_yaml(msg.message, out);
-    out << "\n";
-  }
-}  // NOLINT(readability/fn_size)
-
-inline std::string to_yaml(const AbortSession_Response & msg, bool use_flow_style = false)
-{
-  std::ostringstream out;
-  if (use_flow_style) {
-    to_flow_style_yaml(msg, out);
-  } else {
-    to_block_style_yaml(msg, out);
-  }
-  return out.str();
-}
-
-}  // namespace srv
-
-}  // namespace audition_msgs
-
 namespace rosidl_generator_traits
 {
-
-[[deprecated("use audition_msgs::srv::to_block_style_yaml() instead")]]
-inline void to_yaml(
-  const audition_msgs::srv::AbortSession_Response & msg,
-  std::ostream & out, size_t indentation = 0)
-{
-  audition_msgs::srv::to_block_style_yaml(msg, out, indentation);
-}
-
-[[deprecated("use audition_msgs::srv::to_yaml() instead")]]
-inline std::string to_yaml(const audition_msgs::srv::AbortSession_Response & msg)
-{
-  return audition_msgs::srv::to_yaml(msg);
-}
 
 template<>
 inline const char * data_type<audition_msgs::srv::AbortSession_Response>()

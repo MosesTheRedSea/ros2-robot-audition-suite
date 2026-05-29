@@ -5,14 +5,13 @@
 #ifndef AUDITION_MSGS__SRV__DETAIL__PROCEED_TO_NEXT__STRUCT_HPP_
 #define AUDITION_MSGS__SRV__DETAIL__PROCEED_TO_NEXT__STRUCT_HPP_
 
+#include <rosidl_runtime_cpp/bounded_vector.hpp>
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <array>
 #include <memory>
 #include <string>
 #include <vector>
-
-#include "rosidl_runtime_cpp/bounded_vector.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 #ifndef _WIN32
@@ -59,7 +58,7 @@ struct ProceedToNext_Request_
     bool;
   _proceed_type proceed;
   using _operator_note_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _operator_note_type operator_note;
 
   // setters for named parameter idiom
@@ -70,7 +69,7 @@ struct ProceedToNext_Request_
     return *this;
   }
   Type & set__operator_note(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->operator_note = _arg;
     return *this;
@@ -187,7 +186,7 @@ struct ProceedToNext_Response_
     bool;
   _accepted_type accepted;
   using _next_waypoint_label_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _next_waypoint_label_type next_waypoint_label;
 
   // setters for named parameter idiom
@@ -198,7 +197,7 @@ struct ProceedToNext_Response_
     return *this;
   }
   Type & set__next_waypoint_label(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->next_waypoint_label = _arg;
     return *this;

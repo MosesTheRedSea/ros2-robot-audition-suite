@@ -5,8 +5,6 @@
 
 # Import statements for member types
 
-import builtins  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -116,7 +114,7 @@ class ProceedToNext_Request(metaclass=Metaclass_ProceedToNext_Request):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def proceed(self):
         """Message field 'proceed'."""
         return self._proceed
@@ -129,7 +127,7 @@ class ProceedToNext_Request(metaclass=Metaclass_ProceedToNext_Request):
                 "The 'proceed' field must be of type 'bool'"
         self._proceed = value
 
-    @builtins.property
+    @property
     def operator_note(self):
         """Message field 'operator_note'."""
         return self._operator_note
@@ -144,9 +142,6 @@ class ProceedToNext_Request(metaclass=Metaclass_ProceedToNext_Request):
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -258,7 +253,7 @@ class ProceedToNext_Response(metaclass=Metaclass_ProceedToNext_Response):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def accepted(self):
         """Message field 'accepted'."""
         return self._accepted
@@ -271,7 +266,7 @@ class ProceedToNext_Response(metaclass=Metaclass_ProceedToNext_Response):
                 "The 'accepted' field must be of type 'bool'"
         self._accepted = value
 
-    @builtins.property
+    @property
     def next_waypoint_label(self):
         """Message field 'next_waypoint_label'."""
         return self._next_waypoint_label

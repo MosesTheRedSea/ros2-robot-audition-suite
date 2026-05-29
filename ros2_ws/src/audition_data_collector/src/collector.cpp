@@ -6,9 +6,7 @@ class Collector : public rclcpp::Node
 {
 public:
 
-  // Collector Node Constructor 
-  Collector() : Node("collector"), state(State::IDLE)
-  {
+  Collector() : Node("collector"), state(State::IDLE) {
 
     start_recording_pub = create_publisher<std_msgs::msg::Bool>("/start_record", 10);
     current_status_pub = create_publisher<audition_msgs::msg::CollectionStatus>("/collection_status", 10);
@@ -19,8 +17,8 @@ public:
     waypoint_sub = create_subscription<audition_msgs::msg::CollectionStatus>("/current_waypoint", 10, std::bind(&Collector::waypointCallback, this, std::placeholders::_1));
     
     recording_complete_sub = create_subscription<std_msgs::msg::Bool>("/recording_complete", 10, std::bind(&Collector::recordingCompleteCallback, this, std::placeholders::_1));
-    RCLCPP_INFO(get_logger(), "Collector node ready — waiting for waypoint arrival");
 
+    RCLCPP_INFO(get_logger(), "Collector node ready — waiting for waypoint arrival");
   }
 
 private:
@@ -28,7 +26,6 @@ private:
   enum class State { IDLE, RECORDING};
 
   State state;
-
   audition_msgs::msg::CollectionStatus::ConstSharedPtr current_waypoint;
 
   // These are publisher I made for recording, current_status and whether we should proceed to the next occlusion
@@ -38,6 +35,7 @@ private:
 
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr proceed_pub;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr proceed_sub;
+
   rclcpp::Subscription<audition_msgs::msg::CollectionStatus>::SharedPtr waypoint_sub;
 
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr recording_complete_sub;
@@ -62,6 +60,7 @@ private:
     trigger.data = true;
 
     start_recording_pub->publish(trigger);
+
     publishStatus();
 
   }
@@ -71,6 +70,7 @@ private:
 
     if (msg->data && state == State::RECORDING) {
         RCLCPP_INFO(get_logger(), "Acoustic recording complete — stopping bag and proceeding");
+
         auto trigger = std_msgs::msg::Bool();
         trigger.data = false;
         start_recording_pub->publish(trigger);
@@ -78,6 +78,7 @@ private:
         auto proceed = std_msgs::msg::Bool();
         proceed.data = true;
         proceed_pub->publish(proceed);
+        
         publishStatus();
     }
   }

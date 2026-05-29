@@ -23,7 +23,6 @@ size_t get_serialized_size_audition_msgs__action__CollectAtWaypoint_Goal(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__action__CollectAtWaypoint_Goal(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
@@ -56,7 +55,6 @@ size_t get_serialized_size_audition_msgs__action__CollectAtWaypoint_Result(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__action__CollectAtWaypoint_Result(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
@@ -89,7 +87,6 @@ size_t get_serialized_size_audition_msgs__action__CollectAtWaypoint_Feedback(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__action__CollectAtWaypoint_Feedback(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
@@ -122,7 +119,6 @@ size_t get_serialized_size_audition_msgs__action__CollectAtWaypoint_SendGoal_Req
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__action__CollectAtWaypoint_SendGoal_Request(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
@@ -155,7 +151,6 @@ size_t get_serialized_size_audition_msgs__action__CollectAtWaypoint_SendGoal_Res
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__action__CollectAtWaypoint_SendGoal_Response(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
@@ -207,7 +202,6 @@ size_t get_serialized_size_audition_msgs__action__CollectAtWaypoint_GetResult_Re
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__action__CollectAtWaypoint_GetResult_Request(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
@@ -240,7 +234,6 @@ size_t get_serialized_size_audition_msgs__action__CollectAtWaypoint_GetResult_Re
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__action__CollectAtWaypoint_GetResult_Response(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
@@ -293,7 +286,6 @@ size_t get_serialized_size_audition_msgs__action__CollectAtWaypoint_FeedbackMess
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__action__CollectAtWaypoint_FeedbackMessage(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs

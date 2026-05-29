@@ -23,7 +23,6 @@ size_t get_serialized_size_audition_msgs__msg__CollectionStatus(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs
 size_t max_serialized_size_audition_msgs__msg__CollectionStatus(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_audition_msgs

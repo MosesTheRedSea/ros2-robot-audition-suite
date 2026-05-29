@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/audition_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/audition_msgs/_audition_msgs_s.ep.rosidl_typesupport_c.c.o"
-  "CMakeFiles/audition_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/audition_msgs/_audition_msgs_s.ep.rosidl_typesupport_c.c.o.d"
-  "rosidl_generator_py/audition_msgs/audition_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.pdb"
-  "rosidl_generator_py/audition_msgs/audition_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
+  "rosidl_generator_py/audition_msgs/audition_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.pdb"
+  "rosidl_generator_py/audition_msgs/audition_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so"
 )
 
 # Per-language clean rules from dependency scanning.

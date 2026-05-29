@@ -143,8 +143,7 @@ class AcousticRecorder(Node):
                     self.excitation,
                     samplerate=self.fs,
                     channels=self.channels,
-                    input_device=self.mic_device,
-                    output_device=self.speaker_device
+                    input_device=self.mic_device
                 )
 
                 sd.wait()
@@ -182,7 +181,6 @@ class AcousticRecorder(Node):
             np.save(ir_path, ir)
 
         self.get_logger().info(f'IR saved for {self.channels} channels — repeat {repeat_index+1}')
-
 
 def main(args=None):
     rclpy.init(args=args)

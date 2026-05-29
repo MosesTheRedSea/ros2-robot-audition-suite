@@ -5,14 +5,13 @@
 #ifndef AUDITION_MSGS__SRV__DETAIL__ABORT_SESSION__STRUCT_HPP_
 #define AUDITION_MSGS__SRV__DETAIL__ABORT_SESSION__STRUCT_HPP_
 
+#include <rosidl_runtime_cpp/bounded_vector.hpp>
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <array>
 #include <memory>
 #include <string>
 #include <vector>
-
-#include "rosidl_runtime_cpp/bounded_vector.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 #ifndef _WIN32
@@ -54,12 +53,12 @@ struct AbortSession_Request_
 
   // field types and members
   using _reason_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _reason_type reason;
 
   // setters for named parameter idiom
   Type & set__reason(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->reason = _arg;
     return *this;
@@ -173,7 +172,7 @@ struct AbortSession_Response_
     bool;
   _accepted_type accepted;
   using _message_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _message_type message;
 
   // setters for named parameter idiom
@@ -184,7 +183,7 @@ struct AbortSession_Response_
     return *this;
   }
   Type & set__message(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->message = _arg;
     return *this;

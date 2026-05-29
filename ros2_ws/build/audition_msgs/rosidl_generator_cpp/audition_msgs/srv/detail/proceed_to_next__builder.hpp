@@ -5,11 +5,10 @@
 #ifndef AUDITION_MSGS__SRV__DETAIL__PROCEED_TO_NEXT__BUILDER_HPP_
 #define AUDITION_MSGS__SRV__DETAIL__PROCEED_TO_NEXT__BUILDER_HPP_
 
+#include "audition_msgs/srv/detail/proceed_to_next__struct.hpp"
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
-
-#include "audition_msgs/srv/detail/proceed_to_next__struct.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace audition_msgs

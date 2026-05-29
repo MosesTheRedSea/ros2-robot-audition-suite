@@ -5,11 +5,10 @@
 #ifndef AUDITION_MSGS__MSG__DETAIL__COLLECTION_STATUS__BUILDER_HPP_
 #define AUDITION_MSGS__MSG__DETAIL__COLLECTION_STATUS__BUILDER_HPP_
 
+#include "audition_msgs/msg/detail/collection_status__struct.hpp"
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
-
-#include "audition_msgs/msg/detail/collection_status__struct.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace audition_msgs

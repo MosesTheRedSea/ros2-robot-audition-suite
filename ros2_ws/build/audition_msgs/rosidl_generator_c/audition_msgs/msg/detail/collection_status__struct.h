@@ -24,7 +24,7 @@ extern "C"
 // Member 'state'
 #include "rosidl_runtime_c/string.h"
 
-/// Struct defined in msg/CollectionStatus in the package audition_msgs.
+// Struct defined in msg/CollectionStatus in the package audition_msgs.
 typedef struct audition_msgs__msg__CollectionStatus
 {
   std_msgs__msg__Header header;

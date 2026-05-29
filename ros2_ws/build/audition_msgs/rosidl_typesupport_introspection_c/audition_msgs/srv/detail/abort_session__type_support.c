@@ -21,7 +21,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_init_function(
+void AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -30,12 +30,12 @@ void audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_
   audition_msgs__srv__AbortSession_Request__init(message_memory);
 }
 
-void audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_fini_function(void * message_memory)
+void AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_fini_function(void * message_memory)
 {
   audition_msgs__srv__AbortSession_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_member_array[1] = {
   {
     "reason",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -49,38 +49,36 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__srv__Abo
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_members = {
   "audition_msgs__srv",  // message namespace
   "AbortSession_Request",  // message name
   1,  // number of fields
   sizeof(audition_msgs__srv__AbortSession_Request),
-  audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_member_array,  // message members
-  audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_fini_function  // function to terminate message instance (will not free memory)
+  AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_member_array,  // message members
+  AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_type_support_handle = {
+static rosidl_message_type_support_t AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_type_support_handle = {
   0,
-  &audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_members,
+  &AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, srv, AbortSession_Request)() {
-  if (!audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_type_support_handle.typesupport_identifier =
+  if (!AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_type_support_handle.typesupport_identifier) {
+    AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__srv__AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_type_support_handle;
+  return &AbortSession_Request__rosidl_typesupport_introspection_c__AbortSession_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -114,7 +112,7 @@ extern "C"
 {
 #endif
 
-void audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_init_function(
+void AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -123,12 +121,12 @@ void audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection
   audition_msgs__srv__AbortSession_Response__init(message_memory);
 }
 
-void audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_fini_function(void * message_memory)
+void AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_fini_function(void * message_memory)
 {
   audition_msgs__srv__AbortSession_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_member_array[2] = {
   {
     "accepted",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -142,8 +140,6 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__srv__Abo
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -159,38 +155,36 @@ static rosidl_typesupport_introspection_c__MessageMember audition_msgs__srv__Abo
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_members = {
   "audition_msgs__srv",  // message namespace
   "AbortSession_Response",  // message name
   2,  // number of fields
   sizeof(audition_msgs__srv__AbortSession_Response),
-  audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_member_array,  // message members
-  audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_fini_function  // function to terminate message instance (will not free memory)
+  AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_member_array,  // message members
+  AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_type_support_handle = {
+static rosidl_message_type_support_t AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_type_support_handle = {
   0,
-  &audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_members,
+  &AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_audition_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, audition_msgs, srv, AbortSession_Response)() {
-  if (!audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_type_support_handle.typesupport_identifier) {
-    audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_type_support_handle.typesupport_identifier =
+  if (!AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_type_support_handle.typesupport_identifier) {
+    AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &audition_msgs__srv__AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_type_support_handle;
+  return &AbortSession_Response__rosidl_typesupport_introspection_c__AbortSession_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }

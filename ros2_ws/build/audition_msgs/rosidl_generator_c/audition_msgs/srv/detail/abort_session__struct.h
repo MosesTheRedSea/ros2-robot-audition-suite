@@ -21,7 +21,7 @@ extern "C"
 // Member 'reason'
 #include "rosidl_runtime_c/string.h"
 
-/// Struct defined in srv/AbortSession in the package audition_msgs.
+// Struct defined in srv/AbortSession in the package audition_msgs.
 typedef struct audition_msgs__srv__AbortSession_Request
 {
   rosidl_runtime_c__String reason;
@@ -45,7 +45,7 @@ typedef struct audition_msgs__srv__AbortSession_Request__Sequence
 // already included above
 // #include "rosidl_runtime_c/string.h"
 
-/// Struct defined in srv/AbortSession in the package audition_msgs.
+// Struct defined in srv/AbortSession in the package audition_msgs.
 typedef struct audition_msgs__srv__AbortSession_Response
 {
   bool accepted;

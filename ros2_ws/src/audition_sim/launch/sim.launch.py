@@ -1,19 +1,16 @@
 import os
 import subprocess
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess, TimerAction, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import ExecuteProcess, TimerAction
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    sim_pkg  = get_package_share_directory('audition_sim')
-    nav2_pkg = get_package_share_directory('nav2_bringup')
+    sim_pkg = get_package_share_directory('audition_sim')
 
     urdf_file = os.path.join(sim_pkg, 'urdf', 'robot.urdf.xacro')
     world_file = os.path.join(sim_pkg, 'worlds', 'room.world')
-    nav2_params = os.path.join(sim_pkg, 'config', 'nav2_params.yaml')
     waypoints_config = os.path.join(sim_pkg, 'config', 'sim_waypoints.yaml')
     acoustic_params = os.path.join(sim_pkg, "config", "acoustic_params.yaml")
 
@@ -38,7 +35,7 @@ def generate_launch_description():
             }],
             output='screen'
         ),
- 
+
         Node(
             package='gazebo_ros',
             executable='spawn_entity.py',
@@ -50,7 +47,6 @@ def generate_launch_description():
             output='screen'
         ),
 
-        
         TimerAction(period=5.0, actions=[
             Node(
                 package='slam_toolbox',
@@ -67,19 +63,7 @@ def generate_launch_description():
             ),
         ]),
 
-        
-        TimerAction(period=8.0, actions=[
-            IncludeLaunchDescription(
-                PythonLaunchDescriptionSource(
-                    os.path.join(nav2_pkg, 'launch', 'navigation_launch.py')),
-                launch_arguments={
-                    'use_sim_time': 'true',
-                    'params_file': nav2_params
-                }.items()
-            ),
-        ]),
-
-        TimerAction(period=15.0, actions=[
+        TimerAction(period=12.0, actions=[
             Node(
                 package='audition_data_collector',
                 executable='waypoint',
@@ -93,6 +77,14 @@ def generate_launch_description():
                 parameters=[{'use_sim_time': True}],
                 output='screen'
             ),
+
+            Node(
+                package='audition_data_collector',
+                executable='controller',
+                parameters=[{'use_sim_time': True}],
+                output='screen'
+            ),
+
             Node(
                 package='audition_data_collector',
                 executable='handler',
@@ -103,19 +95,14 @@ def generate_launch_description():
             Node(
                 package='audition_data_collector',
                 executable='recorder',
-                parameters=[{'output_dir': '/home/moses/audition_bags', 'use_sim_time': True}],
+                parameters=[{
+                    'output_dir': '/home/moses/audition_bags',
+                    'use_sim_time': True
+                }],
                 output='screen'
             ),
-
-            #Node(
-            #    package='audition_data_collector',
-            #    executable='acoustic_recorder.py',
-            #    parameters=[acoustic_params],
-            #    output='screen'
-            #),
         ]),
 
-    
         TimerAction(period=8.0, actions=[
             Node(
                 package='rviz2',
