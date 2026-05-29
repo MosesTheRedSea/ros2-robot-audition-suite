@@ -1,8 +1,7 @@
 # ROS2 Robot Audition Suite
-> Developed at the **Institute of Science Tokyo**, Japan
-> 
 ![ROS2 Foxy](https://img.shields.io/badge/ROS2-Foxy-blue)![Python](https://img.shields.io/badge/Python-3.10+-blue)![C++](https://img.shields.io/badge/C%2B%2B-17+-blue)![Research](https://img.shields.io/badge/Type-Research-orange)
-> 
+> Developed at the **Institute of Science Tokyo**, Japan
+
 ![rover-room](https://github.com/MosesTheRedSea/ros2-robot-audition-suite/blob/rover-simulation/IMG_7073.jpg)
 ![rover](https://github.com/MosesTheRedSea/ros2-robot-audition-suite/blob/rover-simulation/IMG_6273.jpeg)
 
